@@ -2,9 +2,9 @@
   <img loading="lazy" src="readme-res/bannerjetrom.png"/>
 </h1>
 <p align="center">
-  <a href="https://github.com/ArtisanROM/ArtisanROM/blob/sixteen-qpr2/LICENSE"><img loading="lazy" src="https://img.shields.io/github/license/ArtisanROM/ArtisanROM?style=for-the-badge&logo=github"/></a>
-  <a href="https://github.com/ArtisanROM/ArtisanROM/commits/sixteen-qpr2"><img loading="lazy" src="https://img.shields.io/github/last-commit/ArtisanROM/ArtisanROM/sixteen-qpr2?style=for-the-badge"/></a>
-  <a href="https://github.com/ArtisanROM/ArtisanROM/stargazers"><img loading="lazy" src="https://img.shields.io/github/stars/ArtisanROM/ArtisanROM?style=for-the-badge"/></a>
+  <a href="https://github.com/JetomoJetick/JetROM/blob/sixteen-qpr2/LICENSE"><img loading="lazy" src="https://img.shields.io/github/license/JetomoJetick/JetROM?style=for-the-badge&logo=github"/></a>
+  <a href="https://github.com/JetomoJetick/JetROM/commits/sixteen-qpr2"><img loading="lazy" src="https://img.shields.io/github/last-commit/JetomoJetick/JetROM/sixteen-qpr2?style=for-the-badge"/></a>
+  <a href="https://github.com/JetomoJetick/JetROM/stargazers"><img loading="lazy" src="https://img.shields.io/github/stars/JetomoJetick/JetROM?style=for-the-badge"/></a>
 </p>
 <p align="center">JetROM <i>Aether</i> is a work-in-progress custom firmware for Samsung Galaxy devices.</p>
 
