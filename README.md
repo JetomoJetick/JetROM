@@ -25,7 +25,7 @@ It's based on the latest and greatest iteration of Samsung's UX and it also incl
 
 It is based on the UN1CA build system which allows automatic downloading/extraction of the firmware, applying the required patches and generating a flashable zip package for the specified target device.
 
-ArtisanROM Aether supports devices using the Exynos 9820 SoC
+JetROM Aether supports devices using the Exynos 9820 SoC
 
 Any form of contribution, suggestions, bug report or feature request for the project will be welcome.
 
@@ -69,8 +69,8 @@ Any form of contribution, suggestions, bug report or feature request for the pro
 
 \* DeX via HDMI not available for devices without USB-C DP support
 
-### ArtisanROM-exclusive features:
-- Integrated OTA updates app
+### JetROM-exclusive features:
+- Integrated OTA updates app (in future)
 - Completely upstreamed kernels*
 
 \* Exynos9820
@@ -120,12 +120,12 @@ This project is licensed under the terms of the [GNU General Public License v3.0
 */
 ```
 
-- You are not allowed to modify or redistribute this ROM without prior approval
-
 # Contributors
-<a href="https://github.com/ArtisanROM/ArtisanROM/graphs/contributors"><img loading="lazy" src="https://contrib.rocks/image?repo=ArtisanROM/ArtisanROM"/></a>
+<a href="https://github.com/JetomoJetick/JetROM/graphs/contributors"><img loading="lazy" src="https://contrib.rocks/image?repo=JetomoJetick/JetROM"/></a>
 
 # Credits:
+* **[JetomoJetick](https://github.com/JetomoJetick)** for maintaining JetROM, porting Exynos 9820 `target`/`platform` configs, and redesigning the banner.
+* **[ArtisanROM](https://github.com/ArtisanROM-archive)** for the base Exynos 9820 device/platform work and patches.
 - **[salvogiangri](https://github.com/salvogiangri)** for the UN1CA build system, OneUI patches, and general help and support while developing.
 - **[ExtremeXT](https://github.com/ExtremeXT)** for helping me fix bugs and giving me support.
 - **[GhasemzadehFard-Dev](https://github.com/GhasemzadehFard-Dev)** for helping fix many bugs I was not able to fix.
