@@ -124,7 +124,7 @@ This project is licensed under the terms of the [GNU General Public License v3.0
 ```
 
 # Contributors
-<a href="https://github.com/JetomoJetick"><img src="https://github.com/JetomoJetick.png" width="56" height="56" alt="JetomoJetick"/></a>
+<a href="https://github.com/JetomoJetick/JetROM/graphs/contributors"><img loading="lazy" src="https://contrib.rocks/image?repo=JetomoJetick/JetROM"/></a>
 <a href="https://github.com/ArtisanROM/ArtisanROM/graphs/contributors"><img loading="lazy" src="https://contrib.rocks/image?repo=ArtisanROM/ArtisanROM"/></a>
 
 # Credits:
