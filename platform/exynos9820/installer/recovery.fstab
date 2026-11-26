@@ -1,0 +1,24 @@
+# Recovery/OTA partition map for Samsung Exynos 9820 devices (beyond1lte)
+# S10 (beyond1lte) uses physical partitions instead of a dynamic super partition.
+
+# <src>                         <mnt_point>     <type>  <mnt_flags>  <fs_mgr_flags>
+# Physical partitions from /proc/partitions (sda25=system, sda26=vendor, sda27=product, sda28=odm)
+/dev/block/by-name/system       /system         erofs   ro           wait,first_stage_mount
+/dev/block/by-name/vendor       /vendor         erofs   ro           wait,first_stage_mount
+/dev/block/by-name/product      /product        erofs   ro           wait,first_stage_mount
+/dev/block/by-name/odm          /odm            erofs   ro           wait,first_stage_mount
+
+/dev/block/by-name/boot         /boot           emmc    defaults     recoveryonly
+/dev/block/by-name/recovery     /recovery       emmc    defaults     recoveryonly
+/dev/block/by-name/dtbo         /dtbo           emmc    defaults     recoveryonly
+/dev/block/by-name/up_param     /up_param       emmc    defaults     recoveryonly
+/dev/block/by-name/vbmeta       /vbmeta         emmc    defaults     recoveryonly
+# S10 does not have a vbmeta_system partition (this is different from S20)
+/dev/block/by-name/cache        /cache          ext4    defaults     recoveryonly
+/dev/block/by-name/userdata     /data           f2fs    defaults     recoveryonly,length=-20480
+/dev/block/by-name/metadata     /metadata       ext4    defaults     recoveryonly
+/dev/block/by-name/efs          /efs            ext4    defaults     recoveryonly
+/dev/block/by-name/radio        /modem          emmc    defaults     recoveryonly
+/dev/block/by-name/misc         /misc           emmc    defaults     recoveryonly
+/dev/block/by-name/prism        /prism          ext4    ro           recoveryonly
+/dev/block/by-name/optics       /optics         ext4    ro           recoveryonly
