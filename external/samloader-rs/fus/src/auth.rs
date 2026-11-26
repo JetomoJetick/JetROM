@@ -1,0 +1,84 @@
+// Copyright 2026 John "topjohnwu" Wu
+//
+// Licensed under the Apache License, Version 2.0 (the "License");
+// you may not use this file except in compliance with the License.
+// You may obtain a copy of the License at
+//
+//     https://www.apache.org/licenses/LICENSE-2.0
+//
+// Unless required by applicable law or agreed to in writing, software
+// distributed under the License is distributed on an "AS IS" BASIS,
+// WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+// See the License for the specific language governing permissions and
+// limitations under the License.
+
+use aes::cipher::{Block, BlockCipherEncrypt, KeyInit};
+
+// This auth key is provided by @henr1kas and @ducthoe
+const AUTH_AES_KEY: [u8; 16] = [
+    0x42, 0x2e, 0x73, 0x73, 0x36, 0x17, 0xae, 0x2b, 0x19, 0x89, 0x40, 0xfd, 0x4e, 0x32, 0xb0, 0xa5,
+];
+
+fn authenticate_block(in_block: &[u8; 16]) -> [u8; 16] {
+    let cipher = aes::Aes128::new_from_slice(&AUTH_AES_KEY).unwrap();
+    let mut block = Block::<aes::Aes128>::default();
+    block.copy_from_slice(in_block);
+    cipher.encrypt_block(&mut block);
+
+    let mut out_block = [0u8; 16];
+    out_block.copy_from_slice(&block);
+    out_block
+}
+
+pub(crate) fn decrypt_nonce(inp: &str) -> String {
+    let mut block = [b'0'; 16];
+    let bytes = inp.as_bytes();
+    let len = bytes.len().min(16);
+    block[..len].copy_from_slice(&bytes[..len]);
+
+    let authenticated = authenticate_block(&block);
+
+    let mut hex = String::with_capacity(32);
+    for b in authenticated {
+        hex.push_str(&format!("{:02x}", b));
+    }
+    hex
+}
+
+fn generate_client_nonce() -> String {
+    use std::time::SystemTime;
+    let mut seed = SystemTime::now()
+        .duration_since(SystemTime::UNIX_EPOCH)
+        .map(|d| d.as_nanos())
+        .unwrap_or(42) as u64;
+
+    let mut nonce = String::with_capacity(16);
+    let chars = b"abcdefghijklmnopqrstuvwxyz0123456789";
+    for _ in 0..16 {
+        seed = seed
+            .wrapping_mul(6364136223846793005)
+            .wrapping_add(1442695040888963407);
+        let idx = (seed >> 32) as usize % chars.len();
+        nonce.push(chars[idx] as char);
+    }
+    nonce
+}
+
+fn to_hex_string(bytes: &[u8]) -> String {
+    bytes.iter().map(|b| format!("{:02x}", b)).collect()
+}
+
+pub(crate) fn compute_history_headers(model: &str) -> (String, String) {
+    let client_nonce = generate_client_nonce();
+
+    let auth_str = format!("auth:{}:00000001", client_nonce);
+    let auth_hash = to_hex_string(&fast_md5::digest(auth_str.as_bytes()));
+
+    let interface_str = format!("interface:{}", model.to_uppercase());
+    let interface_hash = to_hex_string(&fast_md5::digest(interface_str.as_bytes()));
+
+    let final_str = format!("{}:FUS:{}", auth_hash, interface_hash);
+    let final_signature = to_hex_string(&fast_md5::digest(final_str.as_bytes()));
+
+    (client_nonce, final_signature)
+}

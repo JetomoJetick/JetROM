@@ -1,0 +1,142 @@
+name: samloader build
+
+on:
+  release:
+    types: [published]
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  linux:
+    name: Build for Linux (${{ matrix.arch }})
+    runs-on: ${{ matrix.runner }}
+    strategy:
+      matrix:
+        include:
+          - arch: x86_64
+            runner: ubuntu-24.04
+          - arch: aarch64
+            runner: ubuntu-24.04-arm
+
+    steps:
+      - name: Check out
+        uses: actions/checkout@v6
+        with:
+          fetch-depth: 1
+
+      - name: Build samloader
+        run: |
+          # Install packages
+          sudo apt-get update
+          sudo apt-get -y install musl-tools
+          rustup update
+          rustup target add ${{ matrix.arch }}-unknown-linux-musl
+
+          # Get linux headers since musl does not include them
+          git clone https://github.com/sabotage-linux/kernel-headers.git
+          cd kernel-headers
+          make ARCH=${{ matrix.arch }} prefix=../linux-usr install
+          cd ../
+          export CFLAGS_${{ matrix.arch }}_unknown_linux_musl="-I $(readlink -f linux-usr/include)"
+
+          # Build samloader
+          cargo build -p samloader --target ${{ matrix.arch }}-unknown-linux-musl --release
+          VERSION=$(cargo metadata --format-version 1 --no-deps | jq -r '.packages[] | select(.name == "samloader") | .version')
+          zip -j samloader-v$VERSION-linux-${{ matrix.arch }}.zip \
+            target/${{ matrix.arch }}-unknown-linux-musl/release/samloader
+
+      - name: Upload release assets
+        if: github.event_name == 'release'
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          gh release upload "${{ github.event.release.tag_name }}" samloader-*.zip --clobber
+
+      - name: Upload build artifact
+        if: github.event_name == 'workflow_dispatch'
+        uses: actions/upload-artifact@v7
+        with:
+          path: samloader-*.zip
+          archive: false
+
+  windows:
+    name: Build for Windows (${{ matrix.arch }})
+    runs-on: ${{ matrix.runner }}
+    strategy:
+      matrix:
+        include:
+          - arch: x86_64
+            runner: windows-2025
+          - arch: aarch64
+            runner: windows-11-arm
+    defaults:
+      run:
+        shell: bash
+    steps:
+      - name: Check out
+        uses: actions/checkout@v6
+        with:
+          fetch-depth: 1
+
+      - name: Build samloader
+        run: |
+          rustup update
+          cargo build -p samloader --release
+          VERSION=$(cargo metadata --format-version 1 --no-deps | jq -r '.packages[] | select(.name == "samloader") | .version')
+          cd target/release
+          7z a ../../samloader-v$VERSION-windows-${{ matrix.arch }}.zip \
+            samloader.exe
+
+      - name: Upload release assets
+        if: github.event_name == 'release'
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          gh release upload "${{ github.event.release.tag_name }}" samloader-*.zip --clobber
+
+      - name: Upload build artifact
+        if: github.event_name == 'workflow_dispatch'
+        uses: actions/upload-artifact@v7
+        with:
+          path: samloader-*.zip
+          archive: false
+
+  macos:
+    name: Build for macOS
+    runs-on: macos-26
+
+    steps:
+      - name: Check out
+        uses: actions/checkout@v6
+        with:
+          fetch-depth: 1
+
+      - name: Build samloader
+        run: |
+          rustup update
+          rustup target add x86_64-apple-darwin
+          cargo build -p samloader --target aarch64-apple-darwin --release
+          cargo build -p samloader --target x86_64-apple-darwin --release
+          lipo -create -output target/samloader \
+            target/aarch64-apple-darwin/release/samloader \
+            target/x86_64-apple-darwin/release/samloader
+          codesign -s - target/samloader
+          VERSION=$(cargo metadata --format-version 1 --no-deps | jq -r '.packages[] | select(.name == "samloader") | .version')
+          zip -j samloader-v$VERSION-macos-universal.zip \
+            target/samloader
+
+      - name: Upload release assets
+        if: github.event_name == 'release'
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          gh release upload "${{ github.event.release.tag_name }}" samloader-*.zip --clobber
+
+      - name: Upload build artifact
+        if: github.event_name == 'workflow_dispatch'
+        uses: actions/upload-artifact@v7
+        with:
+          path: samloader-*.zip
+          archive: false
