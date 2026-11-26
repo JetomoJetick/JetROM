@@ -9,13 +9,13 @@
 <p align="center">JetROM <i>Aether</i> is a work-in-progress custom firmware for Samsung Galaxy devices.</p>
 
 <p align="center">
-  <a href="https://github.com/ArtisanROM/ArtisanROM/issues">🚀 issues</a>
+  <a href="https://github.com/JetomoJetick/JetROM/issues">🚀 issues</a>
   •
   <a href="https://discord.gg/gh3tZus7WQ">💬 Discord</a>
   •
-  <a href="https://github.com/ArtisanROM/ArtisanROM/blob/sixteen-qpr2/CHANGELOG.md">📝 Changelog</a>
+  <a href="https://github.com/JetomoJetick/JetROM/blob/sixteen-qpr2/CHANGELOG.md">📝 Changelog</a>
   •
-  <a href="https://github.com/ArtisanROM/ArtisanROM/blob/sixteen-qpr2/MAINTAINERS">🧑‍💻 Maintainers</a>
+  <a href="https://github.com/JetomoJetick/JetROM/blob/sixteen-qpr2/MAINTAINERS">🧑‍💻 Maintainers</a>
 </p>
 
 # What is JetROM Aether?
