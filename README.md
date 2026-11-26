@@ -124,7 +124,7 @@ This project is licensed under the terms of the [GNU General Public License v3.0
 ```
 
 # Contributors
-<a href="https://github.com/JetomoJetick/JetROM/graphs/contributors"><img loading="lazy" src="https://contrib.rocks/image?repo=JetomoJetick/JetROM"/></a>
+<a href="https://github.com/JetomoJetick"><img src="https://github.com/JetomoJetick.png" width="64" height="64" alt="JetomoJetick"/></a>
 
 # Credits:
 * **[JetomoJetick](https://github.com/JetomoJetick)** for maintaining JetROM, porting Exynos 9820 `target`/`platform` configs, and redesigning the banner.
