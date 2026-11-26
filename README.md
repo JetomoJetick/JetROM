@@ -1,3 +1,4 @@
+#For now project in testing and I dont have time to finish it
 <h1 align="center">
   <img loading="lazy" src="readme-res/bannerjetrom.png"/>
 </h1>
