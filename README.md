@@ -1,4 +1,5 @@
-# For now project in testing and I dont have time to finish it
+> [!NOTE]
+> **Project Status:** JetROM *Aether* is currently in active testing. Development is temporarily slowed down due to limited free time, but work on the port is ongoing and updates will follow soon.
 
 <h1 align="center">
   <img loading="lazy" src="readme-res/bannerjetrom.png"/>
