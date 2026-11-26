@@ -125,7 +125,7 @@ This project is licensed under the terms of the [GNU General Public License v3.0
 
 # Contributors
 <a href="https://github.com/JetomoJetick"><img src="https://github.com/JetomoJetick.png" width="56" height="56" alt="JetomoJetick"/></a>
-<a href="https://github.com/ArtisanROM-archive"><img src="https://github.com/ArtisanROM-archive.png" width="56" height="56" alt="ArtisanROM Archive"/></a>
+<a href="https://github.com/ArtisanROM/ArtisanROM/graphs/contributors"><img loading="lazy" src="https://contrib.rocks/image?repo=ArtisanROM/ArtisanROM"/></a>
 
 # Credits:
 * **[JetomoJetick](https://github.com/JetomoJetick)** for maintaining JetROM, porting Exynos 9820 `target`/`platform` configs, and redesigning the banner.
