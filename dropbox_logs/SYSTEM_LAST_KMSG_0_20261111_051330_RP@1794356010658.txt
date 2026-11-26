@@ -1,0 +1,955 @@
+isPrevious: false
+Build: samsung/e2sxser/e2s:16/BP4A.251205.006/S926BXXSHDZI1:user/release-keys
+Hardware: exynos9820
+Revision: 26
+Bootloader: G973FXXUHHXJ1
+Radio: G973FXXUHHXJ1,G973FXXUHHXJ1
+Kernel: Linux version 4.14.356-openela-rc1-DevandroidKRNL-v4.0.0+ (runner@runnervmtai0g) (Android (13174946, +pgo, +bolt, +lto, +mlgo, based on r547379) clang version 20.0.0 (https://android.googlesource.com/toolchain/llvm-project b718bcaf8c198c82f3021447d943401e3ab5bd54), LLD 20.0.0 (/mnt/disks/build-disk/src/android/llvm-r547379-release/out/llvm-project/llvm b718bcaf8c198c82f3021447d943401e3ab5bd54)) #1 SMP PREEMPT Tue Oct 27 14:09:13 UTC 2026
+
+[[TRUNCATED]]
+IMING FS3 = 0x210000
+<3>[  428.424801]  [2:    kworker/2:3:  494] sec_ts 4-0048: [sec_input]sec_ts_i2c_read: I2C retry 3, ret:-6
+<3>[  428.424826]  [2:    kworker/2:3:  494] sec_ts 4-0048: [sec_input]sec_ts_i2c_read: I2C read over retry limit
+<3>[  428.449156] I[2:      swapper/2:    0] exynos5-hsi2c 104b0000.hsi2c: HSI2C Error Interrupt occurred(IS:0x00000400, TR:0x00080001)
+<3>[  428.449176] I[2:      swapper/2:    0] exynos5-hsi2c 104b0000.hsi2c: HSI2C NO ACK occured
+<3>[  428.449230]  [2:    kworker/2:3:  494] exynos5-hsi2c 104b0000.hsi2c: ack was not received at write
+<6>[  428.449282]  [2:    kworker/2:3:  494] exynos5-hsi2c 104b0000.hsi2c: exynos5_i2c_set_timing IPCLK = 200000000 OP_CLK = 400000 DIV = 33 Timing FS1 = 0x1F0FF00 TIMING FS2 = 0x30003E0 TIMING FS3 = 0x210000
+<3>[  428.450418] I[2:      swapper/2:    0] exynos5-hsi2c 104b0000.hsi2c: HSI2C Error Interrupt occurred(IS:0x00000400, TR:0x00080001)
+<3>[  428.450437] I[2:      swapper/2:    0] exynos5-hsi2c 104b0000.hsi2c: HSI2C NO ACK occured
+<3>[  428.450488]  [2:    kworker/2:3:  494] exynos5-hsi2c 104b0000.hsi2c: ack was not received at write
+<6>[  428.450544]  [2:    kworker/2:3:  494] exynos5-hsi2c 104b0000.hsi2c: exynos5_i2c_set_timing IPCLK = 200000000 OP_CLK = 400000 DIV = 33 Timing FS1 = 0x1F0FF00 TIMING FS2 = 0x30003E0 TIMING FS3 = 0x210000
+<3>[  428.451679] I[2:      swapper/2:    0] exynos5-hsi2c 104b0000.hsi2c: HSI2C Error Interrupt occurred(IS:0x00000400, TR:0x00080001)
+<3>[  428.451697] I[2:      swapper/2:    0] exynos5-hsi2c 104b0000.hsi2c: HSI2C NO ACK occured
+<3>[  428.451749]  [2:    kworker/2:3:  494] exynos5-hsi2c 104b0000.hsi2c: ack was not received at write
+<6>[  428.451801]  [2:    kworker/2:3:  494] exynos5-hsi2c 104b0000.hsi2c: exynos5_i2c_set_timing IPCLK = 200000000 OP_CLK = 400000 DIV = 33 Timing FS1 = 0x1F0FF00 TIMING FS2 = 0x30003E0 TIMING FS3 = 0x210000
+<3>[  428.452882]  [2:    kworker/2:3:  494] sec_ts 4-0048: [sec_input]sec_ts_i2c_read: I2C retry 3, ret:-6
+<3>[  428.452907]  [2:    kworker/2:3:  494] sec_ts 4-0048: [sec_input]sec_ts_i2c_read: I2C read over retry limit
+<3>[  428.477160] I[2:      swapper/2:    0] exynos5-hsi2c 104b0000.hsi2c: HSI2C Error Interrupt occurred(IS:0x00000400, TR:0x00080001)
+<3>[  428.477178] I[2:      swapper/2:    0] exynos5-hsi2c 104b0000.hsi2c: HSI2C NO ACK occured
+<3>[  428.477230]  [2:    kworker/2:3:  494] exynos5-hsi2c 104b0000.hsi2c: ack was not received at write
+<6>[  428.477282]  [2:    kworker/2:3:  494] exynos5-hsi2c 104b0000.hsi2c: exynos5_i2c_set_timing IPCLK = 200000000 OP_CLK = 400000 DIV = 33 Timing FS1 = 0x1F0FF00 TIMING FS2 = 0x30003E0 TIMING FS3 = 0x210000
+<3>[  428.478421] I[2:      swapper/2:    0] exynos5-hsi2c 104b0000.hsi2c: HSI2C Error Interrupt occurred(IS:0x00000400, TR:0x00080001)
+<3>[  428.478440] I[2:      swapper/2:    0] exynos5-hsi2c 104b0000.hsi2c: HSI2C NO ACK occured
+<3>[  428.478492]  [2:    kworker/2:3:  494] exynos5-hsi2c 104b0000.hsi2c: ack was not received at write
+<6>[  428.478544]  [2:    kworker/2:3:  494] exynos5-hsi2c 104b0000.hsi2c: exynos5_i2c_set_timing IPCLK = 200000000 OP_CLK = 400000 DIV = 33 Timing FS1 = 0x1F0FF00 TIMING FS2 = 0x30003E0 TIMING FS3 = 0x210000
+<3>[  428.479681] I[2:      swapper/2:    0] exynos5-hsi2c 104b0000.hsi2c: HSI2C Error Interrupt occurred(IS:0x00000400, TR:0x00080001)
+<3>[  428.479699] I[2:      swapper/2:    0] exynos5-hsi2c 104b0000.hsi2c: HSI2C NO ACK occured
+<3>[  428.479751]  [2:    kworker/2:3:  494] exynos5-hsi2c 104b0000.hsi2c: ack was not received at write
+<6>[  428.479803]  [2:    kworker/2:3:  494] exynos5-hsi2c 104b0000.hsi2c: exynos5_i2c_set_timing IPCLK = 200000000 OP_CLK = 400000 DIV = 33 Timing FS1 = 0x1F0FF00 TIMING FS2 = 0x30003E0 TIMING FS3 = 0x210000
+<3>[  428.480884]  [2:    kworker/2:3:  494] sec_ts 4-0048: [sec_input]sec_ts_i2c_read: I2C retry 3, ret:-6
+<3>[  428.480908]  [2:    kworker/2:3:  494] sec_ts 4-0048: [sec_input]sec_ts_i2c_read: I2C read over retry limit
+<3>[  428.505158] I[2:      swapper/2:    0] exynos5-hsi2c 104b0000.hsi2c: HSI2C Error Interrupt occurred(IS:0x00000400, TR:0x00080001)
+<3>[  428.505177] I[2:      swapper/2:    0] exynos5-hsi2c 104b0000.hsi2c: HSI2C NO ACK occured
+<3>[  428.505230]  [2:    kworker/2:3:  494] exynos5-hsi2c 104b0000.hsi2c: ack was not received at write
+<6>[  428.505282]  [2:    kworker/2:3:  494] exynos5-hsi2c 104b0000.hsi2c: exynos5_i2c_set_timing IPCLK = 200000000 OP_CLK = 400000 DIV = 33 Timing FS1 = 0x1F0FF00 TIMING FS2 = 0x30003E0 TIMING FS3 = 0x210000
+<3>[  428.506421] I[2:      swapper/2:    0] exynos5-hsi2c 104b0000.hsi2c: HSI2C Error Interrupt occurred(IS:0x00000400, TR:0x00080001)
+<3>[  428.506440] I[2:      swapper/2:    0] exynos5-hsi2c 104b0000.hsi2c: HSI2C NO ACK occured
+<3>[  428.506493]  [2:    kworker/2:3:  494] exynos5-hsi2c 104b0000.hsi2c: ack was not received at write
+<6>[  428.506545]  [2:    kworker/2:3:  494] exynos5-hsi2c 104b0000.hsi2c: exynos5_i2c_set_timing IPCLK = 200000000 OP_CLK = 400000 DIV = 33 Timing FS1 = 0x1F0FF00 TIMING FS2 = 0x30003E0 TIMING FS3 = 0x210000
+<3>[  428.507680] I[2:      swapper/2:    0] exynos5-hsi2c 104b0000.hsi2c: HSI2C Error Interrupt occurred(IS:0x00000400, TR:0x00080001)
+<3>[  428.507697] I[2:      swapper/2:    0] exynos5-hsi2c 104b0000.hsi2c: HSI2C NO ACK occured
+<3>[  428.507749]  [2:    kworker/2:3:  494] exynos5-hsi2c 104b0000.hsi2c: ack was not received at write
+<6>[  428.507801]  [2:    kworker/2:3:  494] exynos5-hsi2c 104b0000.hsi2c: exynos5_i2c_set_timing IPCLK = 200000000 OP_CLK = 400000 DIV = 33 Timing FS1 = 0x1F0FF00 TIMING FS2 = 0x30003E0 TIMING FS3 = 0x210000
+<3>[  428.508884]  [2:    kworker/2:3:  494] sec_ts 4-0048: [sec_input]sec_ts_i2c_read: I2C retry 3, ret:-6
+<3>[  428.508909]  [2:    kworker/2:3:  494] sec_ts 4-0048: [sec_input]sec_ts_i2c_read: I2C read over retry limit
+<3>[  428.533160] I[2:      swapper/2:    0] exynos5-hsi2c 104b0000.hsi2c: HSI2C Error Interrupt occurred(IS:0x00000400, TR:0x00080001)
+<3>[  428.533178] I[2:      swapper/2:    0] exynos5-hsi2c 104b0000.hsi2c: HSI2C NO ACK occured
+<3>[  428.533230]  [2:    kworker/2:3:  494] exynos5-hsi2c 104b0000.hsi2c: ack was not received at write
+<6>[  428.533282]  [2:    kworker/2:3:  494] exynos5-hsi2c 104b0000.hsi2c: exynos5_i2c_set_timing IPCLK = 200000000 OP_CLK = 400000 DIV = 33 Timing FS1 = 0x1F0FF00 TIMING FS2 = 0x30003E0 TIMING FS3 = 0x210000
+<3>[  428.534417] I[2:      swapper/2:    0] exynos5-hsi2c 104b0000.hsi2c: HSI2C Error Interrupt occurred(IS:0x00000400, TR:0x00080001)
+<3>[  428.534436] I[2:      swapper/2:    0] exynos5-hsi2c 104b0000.hsi2c: HSI2C NO ACK occured
+<3>[  428.534488]  [2:    kworker/2:3:  494] exynos5-hsi2c 104b0000.hsi2c: ack was not received at write
+<6>[  428.534539]  [2:    kworker/2:3:  494] exynos5-hsi2c 104b0000.hsi2c: exynos5_i2c_set_timing IPCLK = 200000000 OP_CLK = 400000 DIV = 33 Timing FS1 = 0x1F0FF00 TIMING FS2 = 0x30003E0 TIMING FS3 = 0x210000
+<3>[  428.535676] I[2:      swapper/2:    0] exynos5-hsi2c 104b0000.hsi2c: HSI2C Error Interrupt occurred(IS:0x00000400, TR:0x00080001)
+<3>[  428.535695] I[2:      swapper/2:    0] exynos5-hsi2c 104b0000.hsi2c: HSI2C NO ACK occured
+<3>[  428.535746]  [2:    kworker/2:3:  494] exynos5-hsi2c 104b0000.hsi2c: ack was not received at write
+<6>[  428.535799]  [2:    kworker/2:3:  494] exynos5-hsi2c 104b0000.hsi2c: exynos5_i2c_set_timing IPCLK = 200000000 OP_CLK = 400000 DIV = 33 Timing FS1 = 0x1F0FF00 TIMING FS2 = 0x30003E0 TIMING FS3 = 0x210000
+<3>[  428.536879]  [2:    kworker/2:3:  494] sec_ts 4-0048: [sec_input]sec_ts_i2c_read: I2C retry 3, ret:-6
+<3>[  428.536904]  [2:    kworker/2:3:  494] sec_ts 4-0048: [sec_input]sec_ts_i2c_read: I2C read over retry limit
+<3>[  428.561161] I[2:      swapper/2:    0] exynos5-hsi2c 104b0000.hsi2c: HSI2C Error Interrupt occurred(IS:0x00000400, TR:0x00080001)
+<3>[  428.561181] I[2:      swapper/2:    0] exynos5-hsi2c 104b0000.hsi2c: HSI2C NO ACK occured
+<3>[  428.561234]  [2:    kworker/2:3:  494] exynos5-hsi2c 104b0000.hsi2c: ack was not received at write
+<6>[  428.561286]  [2:    kworker/2:3:  494] exynos5-hsi2c 104b0000.hsi2c: exynos5_i2c_set_timing IPCLK = 200000000 OP_CLK = 400000 DIV = 33 Timing FS1 = 0x1F0FF00 TIMING FS2 = 0x30003E0 TIMING FS3 = 0x210000
+<3>[  428.562424] I[2:      swapper/2:    0] exynos5-hsi2c 104b0000.hsi2c: HSI2C Error Interrupt occurred(IS:0x00000400, TR:0x00080001)
+<3>[  428.562443] I[2:      swapper/2:    0] exynos5-hsi2c 104b0000.hsi2c: HSI2C NO ACK occured
+<3>[  428.562497]  [2:    kworker/2:3:  494] exynos5-hsi2c 104b0000.hsi2c: ack was not received at write
+<6>[  428.562550]  [2:    kworker/2:3:  494] exynos5-hsi2c 104b0000.hsi2c: exynos5_i2c_set_timing IPCLK = 200000000 OP_CLK = 400000 DIV = 33 Timing FS1 = 0x1F0FF00 TIMING FS2 = 0x30003E0 TIMING FS3 = 0x210000
+<3>[  428.563685] I[2:      swapper/2:    0] exynos5-hsi2c 104b0000.hsi2c: HSI2C Error Interrupt occurred(IS:0x00000400, TR:0x00080001)
+<3>[  428.563705] I[2:      swapper/2:    0] exynos5-hsi2c 104b0000.hsi2c: HSI2C NO ACK occured
+<3>[  428.563756]  [2:    kworker/2:3:  494] exynos5-hsi2c 104b0000.hsi2c: ack was not received at write
+<6>[  428.563808]  [2:    kworker/2:3:  494] exynos5-hsi2c 104b0000.hsi2c: exynos5_i2c_set_timing IPCLK = 200000000 OP_CLK = 400000 DIV = 33 Timing FS1 = 0x1F0FF00 TIMING FS2 = 0x30003E0 TIMING FS3 = 0x210000
+<3>[  428.564889]  [2:    kworker/2:3:  494] sec_ts 4-0048: [sec_input]sec_ts_i2c_read: I2C retry 3, ret:-6
+<3>[  428.564913]  [2:    kworker/2:3:  494] sec_ts 4-0048: [sec_input]sec_ts_i2c_read: I2C read over retry limit
+<3>[  428.589159] I[2:      swapper/2:    0] exynos5-hsi2c 104b0000.hsi2c: HSI2C Error Interrupt occurred(IS:0x00000400, TR:0x00080001)
+<3>[  428.589178] I[2:      swapper/2:    0] exynos5-hsi2c 104b0000.hsi2c: HSI2C NO ACK occured
+<3>[  428.589230]  [2:    kworker/2:3:  494] exynos5-hsi2c 104b0000.hsi2c: ack was not received at write
+<6>[  428.589283]  [2:    kworker/2:3:  494] exynos5-hsi2c 104b0000.hsi2c: exynos5_i2c_set_timing IPCLK = 200000000 OP_CLK = 400000 DIV = 33 Timing FS1 = 0x1F0FF00 TIMING FS2 = 0x30003E0 TIMING FS3 = 0x210000
+<3>[  428.590422] I[2:      swapper/2:    0] exynos5-hsi2c 104b0000.hsi2c: HSI2C Error Interrupt occurred(IS:0x00000400, TR:0x00080001)
+<3>[  428.590441] I[2:      swapper/2:    0] exynos5-hsi2c 104b0000.hsi2c: HSI2C NO ACK occured
+<3>[  428.590493]  [2:    kworker/2:3:  494] exynos5-hsi2c 104b0000.hsi2c: ack was not received at write
+<6>[  428.590545]  [2:    kworker/2:3:  494] exynos5-hsi2c 104b0000.hsi2c: exynos5_i2c_set_timing IPCLK = 200000000 OP_CLK = 400000 DIV = 33 Timing FS1 = 0x1F0FF00 TIMING FS2 = 0x30003E0 TIMING FS3 = 0x210000
+<3>[  428.591680] I[2:      swapper/2:    0] exynos5-hsi2c 104b0000.hsi2c: HSI2C Error Interrupt occurred(IS:0x00000400, TR:0x00080001)
+<3>[  428.591699] I[2:      swapper/2:    0] exynos5-hsi2c 104b0000.hsi2c: HSI2C NO ACK occured
+<3>[  428.591750]  [2:    kworker/2:3:  494] exynos5-hsi2c 104b0000.hsi2c: ack was not received at write
+<6>[  428.591802]  [2:    kworker/2:3:  494] exynos5-hsi2c 104b0000.hsi2c: exynos5_i2c_set_timing IPCLK = 200000000 OP_CLK = 400000 DIV = 33 Timing FS1 = 0x1F0FF00 TIMING FS2 = 0x30003E0 TIMING FS3 = 0x210000
+<3>[  428.592883]  [2:    kworker/2:3:  494] sec_ts 4-0048: [sec_input]sec_ts_i2c_read: I2C retry 3, ret:-6
+<3>[  428.592907]  [2:    kworker/2:3:  494] sec_ts 4-0048: [sec_input]sec_ts_i2c_read: I2C read over retry limit
+<3>[  428.617159] I[2:      swapper/2:    0] exynos5-hsi2c 104b0000.hsi2c: HSI2C Error Interrupt occurred(IS:0x00000400, TR:0x00080001)
+<3>[  428.617178] I[2:      swapper/2:    0] exynos5-hsi2c 104b0000.hsi2c: HSI2C NO ACK occured
+<3>[  428.617230]  [2:    kworker/2:3:  494] exynos5-hsi2c 104b0000.hsi2c: ack was not received at write
+<6>[  428.617283]  [2:    kworker/2:3:  494] exynos5-hsi2c 104b0000.hsi2c: exynos5_i2c_set_timing IPCLK = 200000000 OP_CLK = 400000 DIV = 33 Timing FS1 = 0x1F0FF00 TIMING FS2 = 0x30003E0 TIMING FS3 = 0x210000
+<3>[  428.618419] I[2:      swapper/2:    0] exynos5-hsi2c 104b0000.hsi2c: HSI2C Error Interrupt occurred(IS:0x00000400, TR:0x00080001)
+<3>[  428.618438] I[2:      swapper/2:    0] exynos5-hsi2c 104b0000.hsi2c: HSI2C NO ACK occured
+<3>[  428.618490]  [2:    kworker/2:3:  494] exynos5-hsi2c 104b0000.hsi2c: ack was not received at write
+<6>[  428.618542]  [2:    kworker/2:3:  494] exynos5-hsi2c 104b0000.hsi2c: exynos5_i2c_set_timing IPCLK = 200000000 OP_CLK = 400000 DIV = 33 Timing FS1 = 0x1F0FF00 TIMING FS2 = 0x30003E0 TIMING FS3 = 0x210000
+<3>[  428.619678] I[2:      swapper/2:    0] exynos5-hsi2c 104b0000.hsi2c: HSI2C Error Interrupt occurred(IS:0x00000400, TR:0x00080001)
+<3>[  428.619697] I[2:      swapper/2:    0] exynos5-hsi2c 104b0000.hsi2c: HSI2C NO ACK occured
+<3>[  428.619750]  [2:    kworker/2:3:  494] exynos5-hsi2c 104b0000.hsi2c: ack was not received at write
+<6>[  428.619804]  [2:    kworker/2:3:  494] exynos5-hsi2c 104b0000.hsi2c: exynos5_i2c_set_timing IPCLK = 200000000 OP_CLK = 400000 DIV = 33 Timing FS1 = 0x1F0FF00 TIMING FS2 = 0x30003E0 TIMING FS3 = 0x210000
+<3>[  428.620886]  [2:    kworker/2:3:  494] sec_ts 4-0048: [sec_input]sec_ts_i2c_read: I2C retry 3, ret:-6
+<3>[  428.620913]  [2:    kworker/2:3:  494] sec_ts 4-0048: [sec_input]sec_ts_i2c_read: I2C read over retry limit
+<3>[  428.645099]  [2:    kworker/2:3:  494] sec_ts 4-0048: [sec_input]sec_ts_wait_for_ready: Time Over
+<6>[  428.645129]  [2:    kworker/2:3:  494] sec_ts 4-0048: [sec_input]sec_ts_wait_for_ready: 00, 00, 00, 00, 00, 00, 00, 00 [101]
+<3>[  428.645152]  [2:    kworker/2:3:  494] sec_ts 4-0048: [sec_input]sec_ts_start_device: Failed to wait_for_ready
+<3>[  428.645235] I[2:      swapper/2:    0] exynos5-hsi2c 104b0000.hsi2c: HSI2C Error Interrupt occurred(IS:0x00000400, TR:0x00080001)
+<3>[  428.645253] I[2:      swapper/2:    0] exynos5-hsi2c 104b0000.hsi2c: HSI2C NO ACK occured
+<3>[  428.645306]  [2:    kworker/2:3:  494] exynos5-hsi2c 104b0000.hsi2c: ack was not received at write
+<6>[  428.645358]  [2:    kworker/2:3:  494] exynos5-hsi2c 104b0000.hsi2c: exynos5_i2c_set_timing IPCLK = 200000000 OP_CLK = 400000 DIV = 33 Timing FS1 = 0x1F0FF00 TIMING FS2 = 0x30003E0 TIMING FS3 = 0x210000
+<3>[  428.646496] I[2:      swapper/2:    0] exynos5-hsi2c 104b0000.hsi2c: HSI2C Error Interrupt occurred(IS:0x00000400, TR:0x00080001)
+<3>[  428.646515] I[2:      swapper/2:    0] exynos5-hsi2c 104b0000.hsi2c: HSI2C NO ACK occured
+<3>[  428.646567]  [2:    kworker/2:3:  494] exynos5-hsi2c 104b0000.hsi2c: ack was not received at write
+<6>[  428.646618]  [2:    kworker/2:3:  494] exynos5-hsi2c 104b0000.hsi2c: exynos5_i2c_set_timing IPCLK = 200000000 OP_CLK = 400000 DIV = 33 Timing FS1 = 0x1F0FF00 TIMING FS2 = 0x30003E0 TIMING FS3 = 0x210000
+<3>[  428.647753] I[2:      swapper/2:    0] exynos5-hsi2c 104b0000.hsi2c: HSI2C Error Interrupt occurred(IS:0x00000400, TR:0x00080001)
+<3>[  428.647772] I[2:      swapper/2:    0] exynos5-hsi2c 104b0000.hsi2c: HSI2C NO ACK occured
+<3>[  428.647823]  [2:    kworker/2:3:  494] exynos5-hsi2c 104b0000.hsi2c: ack was not received at write
+<6>[  428.647875]  [2:    kworker/2:3:  494] exynos5-hsi2c 104b0000.hsi2c: exynos5_i2c_set_timing IPCLK = 200000000 OP_CLK = 400000 DIV = 33 Timing FS1 = 0x1F0FF00 TIMING FS2 = 0x30003E0 TIMING FS3 = 0x210000
+<3>[  428.648957]  [2:    kworker/2:3:  494] sec_ts 4-0048: [sec_input]sec_ts_i2c_write: I2C retry 3, ret:-6
+<3>[  428.648982]  [2:    kworker/2:3:  494] sec_ts 4-0048: [sec_input]sec_ts_i2c_write: I2C write over retry limit
+<3>[  428.649005]  [2:    kworker/2:3:  494] sec_ts 4-0048: [sec_input]sec_ts_start_device: fail to write Sense_on
+<3>[  428.649096]  [2:    kworker/2:3:  494] sec_ts 4-0048: [sec_input]sec_ts_reset_work: failed to reset, ret:-5
+<6>[  428.649176]  [3:           init:    1] sec_ts 4-0048: [sec_input]sec_ts_remove: flush queue
+<3>[  428.649200]  [3:           init:    1] sec_ts 4-0048: [sec_input]sec_ts_fn_remove
+<6>[  428.649350]  [3:           init:    1] [sec_input] sec_cmd_exit
+<6>[  428.649379]  [3:           init:    1] sec_device_destroy : 6
+<6>[  428.705251]  [2:           init:    1] sec_ts 4-0048: [sec_input]sec_tclm_position_history: not initial case, count:0, p:52
+<6>[  428.705285]  [2:           init:    1] sec_ts 4-0048: [sec_input]mode:0000 tc:0 noise:0 wet:0 wc:0 lp:(0) D0F0A0 fn:0061/0061 // v:0134 cal:A2(FE) CFET7C95.ABNO.L Cal_flag:Fail fail_cnt:149 // id(0,0) // #15 1
+<6>[  428.705313]  [2:           init:    1] sec_ts 4-0048: [sec_input]sec_ts_stop_device
+<3>[  428.710090]  [2:           init:    1] sec_ts 4-0048: [sec_input]sec_ts_power: off: avdd:off, dvdd:off
+<6>[  428.710487]  [2:           init:    1] sec_ts 4-0048: [sec_input]sec_ts_pinctrl_configure: SUSPEND
+<6>[  428.741339]  [2:           init:    1] [SSPBBD]: bcm_spi_shutdown ++
+<6>[  428.741360]  [2:           init:    1] [SSPBBD]: DBG SPI @ TX: <255B = 0, <1K = 0, <2K = 0, <4K = 0, <8K = 0, <16K = 0, <32K = 0, <64K = 0
+<6>[  428.741373]  [2:           init:    1] [SSPBBD]: DBG SPI @ RX: <255B = 0, <1K = 0, <2K = 0, <4K = 0, <8K = 0, <16K = 0, <32K = 0, <64K = 0
+<6>[  428.741384]  [2:           init:    1] [SSPBBD]: bcm_spi_shutdown **
+<6>[  428.741524]  [2:           init:    1] [SSPBBD]: bcm_spi_shutdown --
+<6>[  428.741620]  [2:           init:    1] mif: s5000ap_shutdown: +++
+<6>[  428.749138]  [2:           init:    1] PMUCAL:  pmucal_cp_enable_dump_pc_no_pg()
+<6>[  428.749158]  [2:           init:    1] PMUCAL:  raw_write	CP_OUT = 0x00010001
+<6>[  428.749173]  [2:           init:    1] PMUCAL:  raw_read	CP_OUT = 0x00010001
+<6>[  428.749183]  [2:           init:    1] PMUCAL:  pmucal_cp_reset_assert()
+<6>[  428.749196]  [2:           init:    1] PMUCAL:  raw_write	CP_CONFIGURATION = 0x00000000
+<6>[  428.749208]  [2:           init:    1] PMUCAL:  raw_read	CP_CONFIGURATION = 0x00000000
+<6>[  428.749224]  [2:           init:    1] PMUCAL:  raw_read	CP_STATUS = 0x00000000(expected = 0x00000000)
+<6>[  428.749232]  [2:           init:    1] mif: s5000ap_shutdown: ---
+<3>[  428.749263]  [2:           init:    1] mif: modem_shutdown: s5000ap
+<6>[  428.749330]  [2:           init:    1] drb: dev_ril_bridge_shutdown: 
+<6>[  428.749394]  [2:           init:    1] sec_battery_shutdown: ++
+<6>[  428.749408]  [2:           init:    1] sec_battery_shutdown: --
+<0>[  428.749536]  [2:           init:    1] s3c2410wdt_shutdown: watchdog is still alive
+<0>[  428.749552]  [2:           init:    1] watchdog reset is started to 30secs
+<6>[  428.749589]  [2:           init:    1] s3c2410-wdt 10050000.watchdog_cl0: Watchdog cluster 0 stop done, WTCON = 5c00
+<6>[  428.749614]  [2:           init:    1] s3c2410-wdt 10060000.watchdog_cl2: s3c2410wdt_multistage_wdt_start: count=0x0000b32b, wtcon=00005c3c
+<6>[  428.749629]  [2:           init:    1] s3c2410-wdt 10050000.watchdog_cl0: Watchdog cluster 0 start, WTCON = 5c39
+<0>[  428.749647]  [2:           init:    1] s3c2410wdt_shutdown: watchdog is still alive
+<0>[  428.749661]  [2:           init:    1] watchdog reset is started to 30secs
+<6>[  428.749690]  [2:           init:    1] s3c2410-wdt 10050000.watchdog_cl0: Watchdog cluster 0 stop done, WTCON = 5c18
+<6>[  428.749711]  [2:           init:    1] s3c2410-wdt 10060000.watchdog_cl2: s3c2410wdt_multistage_wdt_start: count=0x0000b32b, wtcon=00005c3c
+<6>[  428.749726]  [2:           init:    1] s3c2410-wdt 10050000.watchdog_cl0: Watchdog cluster 0 start, WTCON = 5c39
+<6>[  428.749907]  [2:           init:    1] decon_shutdown + state:6
+<4>[  428.749923]  [2:           init:    1] decon-2 already OFF state
+<6>[  428.749933]  [2:           init:    1] decon_shutdown -
+<6>[  428.749947]  [2:           init:    1] decon_shutdown + state:6
+<4>[  428.749958]  [2:           init:    1] decon-0 already OFF state
+<6>[  428.749967]  [2:           init:    1] decon_shutdown -
+<6>[  428.752851]  [2:           init:    1] exynos-ufs 13d60000.ufs: exynos_ufs_ctrl_phy_pwr = 0
+<3>[  428.755064]  [2:           init:    1] exynos-ufs 13d60000.ufs: Count: 0 UIC: 0  UTP:0 QUERY: 0
+<3>[  428.755084]  [2:           init:    1] exynos-ufs 13d60000.ufs: Sense Key: medium: 0, hw: 0
+<0>[  428.755890]  [0:           init:    1] reboot: Restarting system with command ''
+<2>[  428.755913]  [0:           init:    1] SMP: stopping secondary CPUs : SYSTEM_RESTART
+<2>[  428.755937] I[5:      swapper/5:    0] CPU5: stopping
+<2>[  428.755953] I[2:      swapper/2:    0] CPU2: stopping
+<2>[  428.755965] I[1:      swapper/1:    0] CPU1: stopping
+<2>[  428.755979] I[4:      swapper/4:    0] CPU4: stopping
+<2>[  428.755995] I[3:      swapper/3:    0] CPU3: stopping
+<2>[  428.756008] I[7:      swapper/7:    0] CPU7: stopping
+<2>[  428.756024] I[6:      swapper/6:    0] CPU6: stopping
+<0>[  428.756239]  [0:           init:    1] debug-snapshot: normal reboot done
+<0>[  428.756461]  [0:           init:    1] sec_reboot (0, )
+<6>[  428.756495]  [0:           init:    1] sec_set_reboot_magic: prev: 4e4e0000
+<6>[  428.756506]  [0:           init:    1] sec_set_reboot_magic: set as: 4e4e0000
+<3>[  428.757395]  [0:           init:    1] [ACPM] wfi done
+<4>[  428.757421]  [0:           init:    1] [exynos_reboot] reboot cmd: sw reset
+<6>[  428.757435]  [0:           init:    1] SOC ID E9820000. Revision: 11
+<0>[  428.757452]  [0:           init:    1] exynos_reboot: Exynos SoC reset right now
+[0:       0.118] 
+[0:       0.120] Samsung S-Boot 4.0 for SM-G973F (Oct  3 2024 - 19:11:11 86559632)
+[0:       0.127] EXYNOS9820 EVT 1.1 (Base on ARM CortexA55)
+[0:       0.132] 8192MB / Rev 26 / G973FXXUHHXJ1 / (PKG_ID 0xf517c180) / LOT_ID N09KT / SHIP /SWRESET (0x20000000)
+[0:       0.144] PMUDBG_CL0_*: cpu0 0x10 cpu1 0x10 cpu2 0x10 cpu3 0x10 noncpu 0x10
+[0:       0.151] PMUDBG_CL1_*: cpu4 0x10 cpu5 0x10 noncpu 0x0
+[0:       0.156] PMUDBG_CL2_*: cpu6 0x10 cpu7 0x10 noncpu 0x10
+[0:       0.162] PMUDBG_*: top 0x0 mif 0x0
+[0:       0.166] FLEXPMU-DBG: [UP] RUNNING_SEQUENCER - DONE
+[0:       0.171] FLEXPMU-DBG: [DOWN] RUNNING_SEQUENCER - DONE
+[0:       0.176] FLEXPMU-DBG: APSOC_SEQ_TOTAL_COUNT - 0
+[0:       0.181] FLEXPMU-DBG: MIF_SEQ_TOTAL_COUNT - 0
+[0:       0.186] FLEXPMU-DBG: APSOC_SLEEP_SEQ_COUNT - 0
+[0:       0.191] FLEXPMU-DBG: MIF_SLEEP_SEQ_COUNT - 0
+[0:       0.196] FLEXPMU-DBG: APSOC_SICD_SEQ_COUNT - 0
+[0:       0.201] FLEXPMU-DBG: MIF_SICD_SEQ_COUNT - 0
+[0:       0.205] FLEXPMU-DBG:  NO POWER MODE
+[0:       0.209] FLEXPMU-DBG: CPU_SEQ_STATUS - cpu0:on, cpu1:on, cpu2:on, cpu3:on, cpu4:on, cpu5:on, cpu6:on, cpu7:on
+[0:       0.228] S2MPB03: [0x15]: 0x80
+[0:       0.232] set_rdx_mask: 0x4000
+[0:       0.235] s5p_check_dump_gpr: LLC init state clear!! (0x00000600)
+[0:       0.241] ccic_register_max77705:
+[0:       0.245] ccic_is_max77705:
+[0:       0.251] ccic_is_max77705: retry:2 rid:7 ret:0
+[0:       0.258] MAX77705 main:0x1A
+[0:       0.265] max77705_unmask_irq interrupt mask:15
+[0:       0.277] max77705_set_drp
+[0:       0.296] ccic_command_polling: OP 0x5E Response OP 0x5E @ 1msec
+[0:       0.303] ccic_command_polling : Command 0x5E delay : 1msec
+[0:       0.309] max77705  found.
+[0:       0.312] muic_register_max77705_apis
+[0:       0.320] muic_is_max77705 chip_id:0x15 muic_id:0x1a -> matched.
+[0:       0.326] [MUIC] print_init_regs
+[0:       0.334]  FW:1a.10 ST:27 31 81 CC:91 08 PD:19 47 IM:00 00 00 TOPCTRL:81
+[0:       0.364] 
+[0:       0.368] MUIC rev = MAX77705(02)
+[0:       0.372] init_multi_microusb_ic Active MUIC 0x10
+[0:       0.394] muic_command_polling: OP 0x01 Response OP 0x01 @ 1msec
+[0:       0.402] muic_command_polling : Command 0x01 delay : 1msec
+[0:       0.423] [MUIC] attached_dev=0x107
+[0:       0.429] charger_is_max77705 chip_id:0x15 -> matched.
+[0:       0.435] charger_register_max77705_apis: MAX77705 charger is registered
+[0:       0.442] init_multi_charger_ic Active CHARGER 0x05
+[0:       0.449] fuelgauge_is_max77705 chip_id:0x15 -> matched.
+[0:       0.455] fuelgauge_register_max77705_apis: MAX77705 fuelgauge is registered
+[0:       0.462] init_multi_fuelgauge_ic Active FUELGAUGE 0x05
+[0:       0.468] board_extern_device_init: Active ccic device.
+[0:       0.475] ifconn_init: CCIC Mode
+[0:       0.479] ccic_wait_auth:
+[0:       0.486] max77705_read_device_versions MAX77705 hw: A main:1Accic_read_adc:
+[0:       0.495] max77705_read_adc:
+[0:       0.501] max77705_read_adc: RID = 07(RID_OPEN)
+[0:       0.506] board_ccic_check_uart: jig_adc=1f, cc_adc=07
+[0:       0.511] ccic_read_adc:
+[0:       0.514] max77705_read_adc:
+[0:       0.519] max77705_read_adc: RID = 07(RID_OPEN)
+[0:       0.524] [MUIC] print_init_regs
+[0:       0.530] ifconn_get_jig_status: CCIC Mode
+[0:       0.534] ccic_read_adc:
+[0:       0.537] max77705_read_adc:
+[0:       0.543] max77705_read_adc: RID = 07(RID_OPEN)
+[0:       0.547] ifconn_is_ccic_jig_device: rid=07
+[0:       0.552] MMU: enable start
+[0:       0.553] MMU: enable done
+[0:       0.553] MAGIC_CODE 0x0
+[0:       0.553] load_secure_payload: Start to Load
+[0:       0.586] load_secure_payload: Load done.
+[0:       0.586] EL3 Monitor information:
+[0:       0.586] Seoul-PPR1-9620R1-5-gdeb1 deb19a1 5a345ff f57a335 541d1bd 663e30c swp aarch64-linux-gnu-gc
+[SECLIB] Seoul-PPR1-9219R1-1-gc36e c36eac9 6029714 82f4c79 48d9f29 78b923f june aarch64-l
+
+[0:       0.586] ACPM: Framework's  version is 8b92f40 yulgon 15:03:16 Jun 04 2019
+[0:       0.586] ACPM: Plugin(id:1) version is da4dafb1 cmos80 15:08:16 Dec 27 2018
+[0:       0.586] ACPM: Plugin(id:2) version is de68428 hsgil 18:17:24 Jul 17 2018
+[0:       0.586] ACPM: Plugin(id:3) version is  
+[0:       0.586] ACPM: Plugin(id:4) version is 342aeb3 honey.kim 14:55:48 Jun 27 2019
+[0:       0.586] ACPM: Plugin(id:5) version is 92faa2d unknown 16:29:21 May 21 2019
+[0:       0.586] ACPM: Plugin(id:6) version is 6661f1c hsgil 16:29:57 Sep 18 2018
+[0:       0.586] ACPM: Plugin(id:7) version is 6469187 yulgon 20:43:56 Jul 10 2019
+[0:       0.586] ACPM: Plugin(id:8) version is 915c36a yulgon 19:29:17 Dec 11 2018
+[0:       0.596] DBGC: power_state up, VERSION: 596a8aa_hosung_REL-21:18:35_Jan_23_2019
+[0:       0.596] UFS EVT: 1
+[0:       0.614] ufs max_gear(3)
+[0:       0.617] UFS link established
+[0:       0.617] UFS active_tx_lane(1), active_rx_lane(1)
+[0:       0.636] UFS device initialized
+[0:       0.637] Use 2 lane connection
+[0:       0.640] UFS active_tx_lane(2), active_rx_lane(2)
+[0:       0.640] UFS Power mode change: M(1)G(3)L(2)HS-series(2)
+[0:       0.645] UFS SW unlock success
+[0:       0.645] UFS SW unlock success
+[0:       0.646] UFS SW unlock success
+[0:       0.649] UFS SW unlock success
+[0:       0.649] ifconn_com_to_open:
+[0:       0.661] muic_command_polling: OP 0x06 Response OP 0x06 @ 1msec
+[0:       0.661] muic_command_polling : Command 0x06 delay : 1msec
+[0:       0.673] muic_command_polling: OP 0x05 Response OP 0x05 @ 1msec
+[0:       0.675] muic_command_polling : Command 0x05 delay : 1msec
+[0:       0.675] max77705_set_muic_uart_early: MUIC: SWITCH_COMMAND: 0x3f
+[0:       0.675] 
+[Debug Info.]
+[0:       0.675]  SecureOS : 75 (MB)
+[0:       0.675] GetSignerVer : SignerVer03
+[0:       0.675] - read_bl1
+[0:       0.675] blk_bread_bootsector: LUN 1, from 0x0, size 0x18, buffer 0xc9b80000
+[0:       0.676] Verify_Signature_Ecdsa 0xc9b78970 6224, 0xc9b79fb0 512
+[0:       0.682] pit_check_signature (PIT) valid.
+[0:       0.686] PARAM ENV VERSION: v1.0..
+[0:       0.686] initialize_ddi_data: usable! (11:0x3ae), warranty reason : (0x0e03)
+[0:       0.686] read whole keystorage partition from the storage
+[0:       0.693] keystorage: It is successfully loaded.
+[0:       0.693] keystorage: init done successfully.
+[0:       0.693] MAGIC_RAM_BASE: 0, MAGIC_RAM_BASE2: 0, ompin: 0
+[0:       0.693] [ldfw] Pass LDFW partition!
+[0:       0.693] [ldfw] read whole CM partition from the storage
+[0:       0.716] ldfw: 0th ldfw's version 0x50210714 name : CryptoManagerV50
+[0:       0.716] ldfw: 1th ldfw's version 0x20181201 name : fmp_fw_V20
+[0:       0.716] ldfw: 2th ldfw's version 0x20220616 name : drm_fw
+[0:       0.716] ldfw: 3th ldfw's version 0x24211108 name : srpmb_fw
+[0:       0.716] ldfw: 4th ldfw's version 0x20210907 name : hdcp_fw
+[0:       0.716] ldfw: 5th ldfw's version 0x20150828 name : tail_fw
+[0:       0.716] GetSignerVer : SignerVer03
+[0:       0.716] ldfw: G973FXXUHHXJ1
+[0:       0.716] ldfw: init ldfw(s). whole ldfws size 0x3f4310
+[0:       0.764] ldfw: try to init 5 ldfw(s). except 0 ldfw 5 ldfw(s) have been inited done.
+[0:       0.764] Secure boot is enabled (secure chip)
+[0:       0.776] [TEEGRIS] register handler1, ret = 0x0
+[0:       0.784] [TEEGRIS] register handler2, ret = 0x0
+[0:       0.784] [TEEGRIS] disable handler registeration, ret = 0x0
+[0:       0.784] [OTP] MODEL_ID read start
+[0:       0.785] [OTP] MODEL_ID read value: 0x130
+[0:       0.785] [OTP] USE_ROM_SEC_BOOT_KEY read: start
+[0:       0.785] [OTP] USE_ROM_SEC_BOOT_KEY read value: 0x1
+[0:       0.785] [OTP] ENABLE_AES read start
+[0:       0.785] [OTP] ENABLE_AES read value: 0x0
+[0:       0.785] [OTP] ANTIRBK_NS_AP0 read start
+[0:       0.785] [OTP] ANTIRBK_NS_AP0 read value: 0x11
+[0:       0.785] [OTP] ANTIRBK_SEC_CP read start
+[0:       0.786] [OTP] ANTIRBK_SEC_CP read value: 0x11
+[0:       0.786] [OTP] COMMERCIAL read start
+[0:       0.786] [OTP] COMMERCIAL read value: 0x1
+[0:       0.786] [OTP] TEST read start
+[0:       0.786] [OTP] TEST read value: 0x0
+[0:       0.786] [OTP] WARRANTY read start
+[0:       0.786] [OTP] WARRANTY read value: 0x1
+[0:       0.786] [OTP] JTAG_SW_LOCK read start
+[0:       0.786] [OTP] JTAG_SW_LOCK read value: 0x1
+[0:       0.786] [OTP] SSS_CPU_DEBUG_DISABLE read start
+[0:       0.786] [OTP] SSS_CPU_DEBUG_DISABLE read value: 0x0
+[0:       0.786] [OTP] CUSTOM_FLAG read start (7)
+[0:       0.786] [OTP] CUSTOM_FLAG read value: 0x1
+[0:       0.786] [OTP] CUSTOM_FLAG read start (8)
+[0:       0.787] [OTP] CUSTOM_FLAG read value: 0x1
+[0:       0.787] [OTP] CUSTOM_FLAG read start (9)
+[0:       0.787] [OTP] CUSTOM_FLAG read value: 0x0
+[0:       0.787] [OTP] ENABLE_MODEL_ID read start
+[0:       0.787] [OTP] ENABLE_MODEL_ID read value: 0x1
+[0:       0.787] [OTP] ENABLE_ANTIRBK read start
+[0:       0.787] [OTP] ENABLE_ANTIRBK read value: 0x1
+[0:       0.787] [OTP] CUSTOM_FLAG read start (15)
+[0:       0.787] [OTP] CUSTOM_FLAG read value: 0x1
+[0:       0.787] [OTP] CUSTOM_FLAG read start (16)
+[0:       0.787] [OTP] CUSTOM_FLAG read value: 0x0
+[0:       0.787] [EFUSE] SMC Read the 0x0 ...
+[0:       0.787] [EFUSE] SMC Read Count value: 17
+[0:       0.787] [EFUSE] SMC Read the 0x1 ...
+[0:       0.787] [EFUSE] SMC Read Count value: 1
+[0:       0.787] [EFUSE] SMC Read the 0x2 ...
+[0:       0.787] [EFUSE] SMC Read Count value: 0
+[0:       0.787] [EFUSE] SMC Read the 0x3 ...
+[0:       0.787] [EFUSE] SMC Read Count value: 1
+[0:       0.787] [OTP] JTAG_KEY check start
+[0:       0.787] [OTP] JTAG_KEY check: valid key
+[0:       0.787] (304) vs (304)
+[0:       0.787] [OTP] ROM_SECURE_BOOT_KEY check start
+[0:       0.788] [OTP] ROM_SECURE_BOOT_KEY check: valid key
+[0:       0.788] JTAG_LOCK is already enabled in this device.
+[0:       0.788] [EFUSE] Already fused for Market status
+[0:       0.788] check_secure_ch_key_prov_flag : No Flag
+[0:       0.788] [OTP] SSS_CPU_SECURE_BOOT_KEY check start
+[0:       0.788] [OTP] SSS_CPU_SECURE_BOOT_KEY check: valid key
+[0:       0.788] [OTP] SSS_SRAM_READ_DISABLE read start
+[0:       0.788] [OTP] SSS_SRAM_READ_DISABLE read value: 0x1
+[0:       0.788] [OTP] SSS_SRAM_BOOT_DISABLE read start
+[0:       0.788] [OTP] SSS_SRAM_BOOT_DISABLE read value: 0x1
+[0:       0.788] [EFUSE] This is commercial device.
+[0:       0.788] set_tzpc_secureport: successfully protected 0
+[0:       0.788] TEEGris MST gpio protection
+[0:       0.788] eSE Protection!!
+[0:       0.788] [SW] get random number: start
+[0:       0.788] [SW] get random number: success
+[0:       0.789] [CM] RPMB: hmac calculation was finished successfully
+[0:       0.789] initialize_secdata_rpmb: usable! (0x52504d42), 1
+[0:       0.789] [SW] get random number: start
+[0:       0.789] [SW] get random number: success
+[0:       0.789] Reading of the Write Counter value request
+[0:       0.789] Reading of the Write Counter value request (Swapped)
+[0:       0.789] Reading of the Write Counter value response
+[0:       0.789] Reading of the Write Counter value response (Swapped)
+[0:       0.789] RPMB: MAC
+[0:       0.790] --> Write counter : 72a4
+[0:       0.790] result : 0x0
+[0:       0.790] [CM] RPMB: key was derived successfully
+[0:       0.790] key derivation: success
+[0:       0.790] key: 
+[0:       0.790] 
+[0:       0.790] [CM] RPMB: hmac calculation was finished successfully
+[0:       0.790] [CM] RPMB: get hmac value: success
+[0:       0.791] RPMB: Magic Block Write: success
+[0:       0.791] [SW] get random number: start
+[0:       0.791] [SW] get random number: success
+[0:       0.791] [CM] RPMB: hmac calculation was finished successfully
+[0:       0.791] RPMB: Magic Block Read: success
+[0:       0.791] RPMB: Magic Block Compare: success
+[0:       0.791] set_fuse_history : no reason
+[0:       0.791] fuse history 0x1
+[0:       0.791] [SW] get random number: start
+[0:       0.791] [SW] get random number: success
+[0:       0.792] [CM] RPMB: hmac calculation was finished successfully
+[0:       0.792] [SW] get random number: start
+[0:       0.792] [SW] get random number: success
+[0:       0.792] [CM] RPMB: hmac calculation was finished successfully
+[0:       0.792] [SW] get random number: start
+[0:       0.792] [SW] get random number: success
+[0:       0.793] [CM] RPMB: hmac calculation was finished successfully
+[0:       0.793] [SW] get random number: start
+[0:       0.793] [SW] get random number: success
+[0:       0.793] [CM] RPMB: hmac calculation was finished successfully
+[0:       0.793] [SW] get random number: start
+[0:       0.793] [SW] get random number: success
+[0:       0.794] [CM] RPMB: hmac calculation was finished successfully
+[0:       0.794] 
+[0:       0.794] [SW] get random number: start
+[0:       0.794] [SW] get random number: success
+[0:       0.794] [CM] RPMB: hmac calculation was finished successfully
+[0:       0.794] [KG] valid hash.
+[0:       0.794] [KG] 'Checking' state.
+[0:       0.794] read_coredata
+[0:       0.794] [CM] START: unwrap data with HWKEK
+[0:       0.794] [CM] wrap/unwrap key: start
+[0:       0.794] [CM] wrap/unwrap key: success
+[0:       0.794] [CM] PASS: unwrap data with HWKEK
+[0:       0.794] bl_read_esi
+[0:       0.795] bl_init: rpmb is provisioned
+[0:       0.795] em_create_cmd_req : num_of_items 4
+[0:       0.795] em_cmd_print_command : [CMD] : [EM_CMD_INIT]
+[0:       0.795] bootloader_key_first_do_step : init state is [COMPLETED], pass
+[0:       0.795] bl_init: no need to write Core data(0x0000000000000000)
+[0:       0.795] bl_init: no need to write ESI data(0x0000000000000000)
+[0:       0.795] bl_init: ret = 0x00000000
+[0:       0.795] bl_read_token
+[0:       0.796] em_token_get_issuer_info : token is all zero
+[0:       0.796] DDR SIZE: 8G
+[0:       0.796] LPDDR4 manufacturer : Samsung
+[0:       0.796] ECT Version: PARA2005
+[0:       0.796] DREX_CALIBRATION3: 0xc731919
+[0:       0.806] [TMU:0] [TMU:1] [TMU] 56 57
+[0:       0.816] UFS vendor: SAMSUNG
+[0:       0.816] UFS FW rev : 0002
+[0:       0.816] UFS Provision : PASS
+[0:       0.816] UFS Product KLUDG4U1EA-B0C1
+[0:       0.816] UFS Size(GB) 128
+[0:       0.816] UFS MD 0119
+[0:       0.816] UFS Provisioning Result : PASS
+[0:       0.823] UFS LC: 0
+[0:       0.823] board_early_init
+[0:       0.823] [MUIC] print_init_regs
+[0:       0.831] max77705_set_prequal_charge: CNFG_01(0x38)
+[0:       0.834] max77705_init_ific : MAX77705_CHG_REG_CHG_INT_OK(0xdf)
+[0:       0.843] max77705_set_charger_watchdog: state(1), reg_data(0x14)
+[0:       0.856] charger_command_polling: OP 0x57 Response OP 0x57 @ 1msec
+[0:       0.856] charger_command_polling : Command 0x57 delay : 1msec
+[0:       0.857] [CHARGER] max77705_set_fw_noautoibus AUTOIBUS: [0x3], chg_dtls00[0xe0]
+[0:       0.857] ccic_read_pd_state:
+[0:       0.860] max77705_get_max_current rp_current:1,is_sink:1,pd_state:25
+[0:       0.860] ifconn_get_charger_status:
+[0:       0.862] ccic_read_adc:
+[0:       0.862] max77705_read_adc:
+[0:       0.863] max77705_read_adc: RID = 07(RID_OPEN)
+[0:       0.863] ccic_is_valid_charger: default ID + VB
+[0:       0.863] ifconn_get_charger_status: valid_charger=1
+[0:       0.865] max77705_get_wireless_charger_detect: wireless check 0
+[0:       0.867] max77705_fuel_gauge_read_vcell: VCELL(4286), data(0xd652)
+[0:       0.867] max77705_set_auto_current: chg_state:0x1, wpc_status:0, pd_current_state:500
+[0:       0.867] ifconn_is_hc_cable:
+[0:       0.867] ifconn_get_device:
+[0:       0.868] ifconn_is_muic_jig_device: adc=0x1f
+[0:       0.868] ccic_read_adc:
+[0:       0.868] max77705_read_adc:
+[0:       0.870] max77705_read_adc: RID = 07(RID_OPEN)
+[0:       0.870] ifconn_is_ccic_jig_device: rid=07
+[0:       0.870] ifconn_is_hc_cable: adc=0x1f
+[0:       0.871] max77705_set_auto_current: set charge current(in:500, out:450), vcell:4286mv
+[0:       0.876] max77705_set_charging_current: current(450), data(0x49)
+[0:       0.888] charger_command_polling: OP 0x16 Response OP 0x16 @ 1msec
+[0:       0.888] charger_command_polling : Command 0x16 delay : 1msec
+[0:       0.900] charger_command_polling: OP 0x15 Response OP 0x15 @ 1msec
+[0:       0.901] charger_command_polling : Command 0x15 delay : 1msec
+[0:       0.901] [CHARGER] max77705_set_usbc_input_current CHGIN_ILIM: [0x13]
+[0:       0.906] max77705_set_input_current: current(500), data(0x13)
+[0:       0.960] max77705_set_charger_state: buck(1), chg(1), reg(0x15)
+[0:       0.960] ifconn_get_charger_status:
+[0:       0.961] ccic_read_adc:
+[0:       0.961] max77705_read_adc:
+[0:       0.963] max77705_read_adc: RID = 07(RID_OPEN)
+[0:       0.963] ccic_is_valid_charger: default ID + VB
+[0:       0.963] ifconn_get_charger_status: valid_charger=1
+[0:       0.963] fuelguage : wpc_status(0)
+[0:       0.963] max77705_init_fuel_gauge: Start!!
+[0:       0.963] max77705_adc_read_temp temp = 36, temp_adc = 1561
+[0:       0.963] max77705_init_fuel_gauge: read temp = 36
+[0:       0.966] max77705_check_batt_type: size : 1
+[0:       0.971] max77705_init_fuel_gauge: Battery type : Battery, capacity: 3273, status: 128, Jig: 0, ver: 5
+[0:       0.973] max77705_fuel_gauge_read_vcell: VCELL(4292), data(0xd6a6)
+[0:       1. 29] max77705_set_charger_state: buck(1), chg(0), reg(0x14)
+[0:       1. 79] max77705_init_fuel_gauge: Already initialized (0x0cc9, Battery type)
+[0:       1. 79] max77705_check_validation_with_tablesoc: Start!!
+[0:       1. 82] max77705_fuel_gauge_read_soc: SOC(98), data(0x62a2)
+[0:       1. 84] max77705_fuel_gauge_read_ocv: VFOCV(4292), data(0xd69d)
+[0:       1. 84] max77705_calculate_table_soc: vcell [4292] table_soc [99]
+[0:       1. 84] differ(1), table_soc(99), RepSOC(98)
+[0:       1. 86] max77705_fuel_gauge_read_ocv: VFOCV(4292), data(0xd69d)
+[0:       1. 86] ifconn_get_charger_status:
+[0:       1. 88] ccic_read_adc:
+[0:       1. 88] max77705_read_adc:
+[0:       1. 89] max77705_read_adc: RID = 07(RID_OPEN)
+[0:       1. 89] ccic_is_valid_charger: default ID + VB
+[0:       1. 89] ifconn_get_charger_status: valid_charger=1
+[0:       1. 91] max77705_get_wireless_charger_detect: wireless check 0
+[0:       1. 91] is_valid_charging_source: chg_state=1, wpc_status=0
+[0:       1. 91] max77705_fuel_gauge_get_soc_diff_limit: diff_limit(50) in charging status!
+[0:       1. 91]  vcell(4292),soc_diff_limit(50), low_temp_reset(0)
+[0:       1. 93] max77705_fuel_gauge_read_soc: SOC(98), data(0x62a2)
+[0:       1. 94] max77705_fuel_gauge_read_ocv: VFOCV(4292), data(0xd69d)
+[0:       1. 96] max77705_fuel_gauge_read_vcell: VCELL(4292), data(0xd6a6)
+[0:       1. 96] max77705_init_fuel_gauge : SOC(98), OCV(4292), VCELL(4292)
+[0:       1.151] max77705_set_charger_state: buck(1), chg(1), reg(0x15)
+[0:       1.151] PMIC_S2MPS19_ID	= 0x12
+[0:       1.151] PMIC_S2MPS20_ID	= 0x02
+[0:       1.151] PMIC TRIM (no reset:0)
+[0:       1.151] S2MPS19
+[0:       1.151] PMIC_INT1    	= 0x03 PWRONF PWRONR
+[0:       1.151] PMIC_INT2    	= 0x51 RTC60S RTC1S ADCDONE
+[0:       1.151] PMIC_INT3    	= 0x00
+[0:       1.151] PMIC_INT4    	= 0x00
+[0:       1.151] PMIC_INT5    	= 0x00
+[0:       1.151] PMIC_STATUS1 	= 0x1a JIGONB MR2B MR1B
+[0:       1.151] PMIC_STATUS2 	= 0x00
+[0:       1.151] PMIC_PWRONSRC	= 0x08 MRST
+[0:       1.151] PMIC_OFFSRC  	= 0x00
+[0:       1.151] S2MPS20
+[0:       1.151] PMIC_INT1    	= 0xc0 ADCDONE WRSTB
+[0:       1.151] PMIC_INT2    	= 0x00
+[0:       1.151] PMIC_STATUS1 	= 0x01 PWRON
+[0:       1.151] PMIC_OFFSRC  	= 0x00
+[0:       1.151] PMIC_RTC_CTRL	= 0x02
+[0:       1.151] PMIC_RTC_SMPL	= 0x13
+[0:       1.152] RTC TIME: 2026-11-11 00:08:47(0x08)AM
+[0:       1.152] PMIC MON[0] = [0x54: 0x28]
+[0:       1.152] PMIC MON[1] = [0x47: 0x00]
+[0:       1.152] PMIC MON[2] = [0xc1: 0x27]
+[0:       1.152] PMIC MON[3] = [0x4f: 0x0c]
+[0:       1.152] PMIC MON[4] = [0x50: 0x2c]
+[0:       1.152] PMIC MON[5] = [0x51: 0x30]
+[0:       1.152] PMIC MON[6] = [0x60: 0x30]
+[0:       1.152] PMIC MON[7] = [0x58: 0x2c]
+[0:       1.152] s5p_check_keypad: 0x0
+[0:       1.152] s5p_check_reboot_mode: PINFORM = 12345670 ... setting REBOOT_MODE to 0
+[0:       1.153] set_mrstb: set as LOW (C7)
+[0:       1.153] max77705_ific_set_mrstb: Not USE.
+[0:       1.154] [DPRM] init_debug_param_element: DEBUG PARAM ELEM VERSION: 20110610
+[0:       1.154] [SECD] sec_debug_next_init: sdn: 0x91388000 B: 20002 K: 10001
+[0:       1.154] [SECD] sec_debug_init_buffer: start 91388000 ~ 913929d0
+[0:       1.154] [SECD] sec_debug_init_buffer_each:     summary.html: 0x91392b00 ~ 0x91592b00 (clear)
+[0:       1.154] [SECD] sec_debug_init_buffer_each:     auto_comment: 0x91592d00 ~ 0x91593b78 (clear)
+[0:       1.154] [SECD] sec_debug_init_buffer_each:       extra_info: 0x91593d00 ~ 0x915a3d00
+[0:       1.155] [SECD] sec_debug_init_buffer_each:    auto_analysis: 0x915a3f00 ~ 0x916a3f00 (clear)
+[0:       1.155] [SECD] sec_debug_init_buffer_each:    init_task_log: 0x916a4100 ~ 0x916c4100
+[0:       1.155] [SECD] sec_debug_init_buffer_each:    debug_history: 0x916c4300 ~ 0x917c4300 (clear)
+[0:       1.155] [SECD] sec_debug_init_buffer_each:     first2m_kmsg: 0x917c4500 ~ 0x919c4500
+[0:       1.155] [SECD] sec_debug_init_buffer_each:       boot_reset: 0x919c4700 ~ 0x91ac4700 (clear)
+[0:       1.155] [9820] handle_acpm_dump: 23: acpm_dump: base: 95014000 size: 25000
+[0:       1.155] [9820] handle_info_summary: not implemented
+[0:       1.155] [SECD] sec_debug_init_buffer: End of SDN dump: 91ac4700
+[0:       1.155] [MTAB] dump_invalid_mtab_members: FAILED: rw_semaphore_count,rt_mutex_owner,task_struct_se__ftt_mark,task_struct_cpus_ptr,module_list,module_name,module_core_layout__base,module_core_layout__size,module_init_layout__base,module_init_layout__size,module_kallsyms,mod_kallsyms_symtab,mod_kallsyms_num_symtab,mod_kallsyms_strtab,mod_kallsyms_typetab,elf64_sym_st_name,elf64_sym_st_info,elf64_sym_st_value,elf64_sym_st_size,
+[0:       1.155] [KSYM] sec_debug_next_ksyms_init: ksyms init successfully 83528000
+[0:       1.155] [SECD] sec_debug_next_init: target_dprm_mask: 0
+[0:       1.156] [BORE] init_debug_bootloader_reset_logs: magic = b0071257 / version = 20201230 / total sz = 639e4
+[0:       1.156] [BORE] init_debug_bootloader_reset_logs: current index 903
+[0:       1.177] init_cmdline: default: console=ram loglevel=4
+[0:       1.177] [SW] get random number: start
+[0:       1.177] [SW] get random number: success
+[0:       1.177] [CM] RPMB: hmac calculation was finished successfully
+[0:       1.177] [FMM] 'FMM' Unlock state
+[0:       1.178] [SECD] sec_debug_work:  --- let's burn ! --- 
+[0:       1.178] [RERE] show_reset_reason_rawdata: 
+ rst_stat: 0x20000000, inform2: 0x4E4E0000, inform3: 0x0, ram_base: 0x0
+[0:       1.178] RESET CAUSE - NORMAL RESET
+[0:       1.178] [RERE] set_reset_reason: set_reset_reason: set RR_THIS as RP(7)
+[0:       1.178] get_upload_mode: param value: 0x0
+[0:       1.178] [SECD] check_debug_flag: 1: DEBUG FLAG is NOTYET
+[0:       1.185] [DPHI] init_debug_param_hist: magic = 0 / version = 0
+[0:       1.185] [DPHI] verify_dprm_hist_header: not initialized (magic: 0 -> 1f5f7f9f)
+[0:       1.185] [DPHI] init_dprmhist: re-init done
+[0:       1.185] [DPHI] store_debug_hist: store DPRM HIST to param
+[0:       1.189] [DPHI] init_debug_param_hist: index: 0 / this addr: 0x916c4340
+[0:       1.189] [DPHI] init_debug_param_hist: available (0x30/0xf7800/0xf7840)
+[0:       1.189] [DPHI] update_total_rr: reset_reason is invalid
+[0:       1.189] [DPHI] update_total_rr: prev: 
+[0:       1.189] [DPHI] update_total_rr: : re-initialize total reset reason count
+[0:       1.189] [DPHI] update_total_rr: K000D000S000P000
+[0:       1.189] [DPHI] load_reset_counter: 89: p[0] is NULL, 
+[0:       1.189] [DPHI] load_reset_counter: TOTAL RSTCNT EMPTY
+[0:       1.189] [HDSS] snapshot_init: skip, stage under B
+[0:       1.190] [EXIN] sec_debug_set_extra_info_reset_status: 0x20000000/0x4E4E0000/0x0/0x0
+[0:       1.190] [EXIN] sec_debug_set_extra_info_rstcnt: RSTCNT: 0
+[0:       1.190] [EXIN] sec_debug_print_bat: BAT 098/4250/0362/-00280
+[0:       1.191] [DCOM] sec_debug_add_kconfig_dump: skip, only for STAGE B
+[0:       1.191] [ANLS] check_run_condition: skip, not proper stage
+[0:       1.191] [USTR] init_upload_cause_buf: 0xc97ab7b8++200
+[0:       1.192] [SECD] sec_debug_work: backup sec debug result to DPRM
+[0:       1.193] [SECD] sec_debug_save_all: store all debug data to DPRM
+[0:       1.193] [SECD] store_reset_reason_to_param: set param reset_reason as (7, R)
+[0:       1.195] [COMM] sec_debug_store_auto_comment_to_param: store auto comment
+[0:       1.195] [SECD] update_cmdline: add cmdline as 7
+[0:       1.195] [IDEC] destroy_tree: free root
+[0:       1.195] [SECD] sec_debug_work:  --- in the pipe, five by five --- 
+[0:       1.207] max77705_fuel_gauge_read_vcell: VCELL(4285), data(0xd64a)
+[0:       1.209] max77705_fuel_gauge_read_soc: SOC(98), data(0x62a2)
+[0:       1.219] get_upload_mode: param value: 0x0
+[0:       1.219] s5p_check_upload: MAGIC(0x0), RST(0x20000000), INF3(0x0)
+[0:       1.221] get_upload_mode: param value: 0x0
+[0:       1.221] s5p_check_upload: debug level is LO! (mode: 0, mask: 0x0)
+[0:       1.221] is_normal_booting: MINFORM: 4e4e0000
+[0:       1.221] is_normal_booting: intentional normal booting
+[0:       1.221] s5p_check_download: 0
+[0:       1.221] [SW] get random number: start
+[0:       1.221] [SW] get random number: success
+[0:       1.221] [CM] RPMB: hmac calculation was finished successfully
+[0:       1.221] [FMM] 'FMM' Unlock state
+[0:       1.223] Recovery Reason Clear!!
+[0:       1.225] ccic_get_jig_status:
+[0:       1.225] ccic_read_adc:
+[0:       1.225] max77705_read_adc:
+[0:       1.226] max77705_read_adc: RID = 07(RID_OPEN)
+[0:       1.228] ifconn_get_charger_status:
+[0:       1.229] ccic_read_adc:
+[0:       1.229] max77705_read_adc:
+[0:       1.231] max77705_read_adc: RID = 07(RID_OPEN)
+[0:       1.231] ccic_is_valid_charger: default ID + VB
+[0:       1.231] ifconn_get_charger_status: valid_charger=1
+[0:       1.231] is_normal_booting: MINFORM: 4e4e0000
+[0:       1.231] is_normal_booting: intentional normal booting
+[0:       1.231] check_pm_status: normal reset, do not enter LPM mode.
+[0:       1.233] max77705_fuel_gauge_read_vcell: VCELL(4285), data(0xd64a)
+[0:       1.233] ifconn_is_hc_cable:
+[0:       1.233] ifconn_get_device:
+[0:       1.235] ifconn_is_muic_jig_device: adc=0x1f
+[0:       1.235] ccic_read_adc:
+[0:       1.235] max77705_read_adc:
+[0:       1.236] max77705_read_adc: RID = 07(RID_OPEN)
+[0:       1.236] ifconn_is_ccic_jig_device: rid=07
+[0:       1.236] ifconn_is_hc_cable: adc=0x1f
+[0:       1.238] vib_on
+[0:       1.238] vib_on
+[0:       1.238] [VIB] max77705_vibtonz_en 1
+[0:       1.238] PWM PCLK = 26000000 
+[0:       1.238] [PWM : 1] prescaler : 25, div : 1
+[0:       1.238] [PWM]tcnt : 52, tcmp : 2
+[0:       1.242] [VIB] max77705_vibtonz_en MCONFIG: [0x02] -> [0xc2]
+[0:       1.342] [VIB] max77705_vibtonz_en 0
+[0:       1.347] [VIB] max77705_vibtonz_en MCONFIG: [0xc2] -> [0x82]
+[0:       1.347] drawimg: type: 0
+[0:       1.352] read 'logo.jpg'(192523) completed.
+[0:       1.511] LoadJPEG took 156 msec
+[0:       1.511] [WARN] GdDecodeImage: JPEG image is bigger than LCD
+[0:       1.719] max77705_fuel_gauge_read_vcell: VCELL(4302), data(0xd71a)
+[0:       1.721] max77705_fuel_gauge_read_soc: SOC(98), data(0x62a2)
+[0:       1.728] DISP:INFO:register_panel_drv : name : s6e3ha9
+[0:       1.728] DISP:INFO:panel_drv_get_info:get panel info success : ddi name : s6e3ha9
+[0:       1.728] DISP:INFO:set_panel_gpio:was called
+[0:       1.728] DISP:INFO:panel_drv_probe_drv:find : s6e3ha9
+[0:       1.728] DISP:INFO:set_panel_power:was called
+[0:       1.728] board_set_dev_pm: Display PMIC: reset regulators
+[0:       1.762] DSIM:INFO:dsim init start..
+[0:       1.762] dsim_sw_reset : state : 0
+[0:       1.762] DSIM:INFO:dsim_is_pll_stable:EVT1
+[0:       1.762] DISP:dsim_set_clocks:word clock is 56 MHz
+[0:       1.762] DISP:dsim_set_clocks:requested escape clock 20 MHz
+[0:       1.762] DISP:dsim_set_clocks:escape clock divider is 0x3
+[0:       1.762] DISP:dsim_set_clocks:escape clock is 18 MHz
+[0:       1.762] DSIM:INFO:dsim_get_dphy_timing:bps(898) clk_prepare(35) clk_zero(14) clk_post(3)
+[0:       1.762] DSIM:INFO:dsim_get_dphy_timing:clk_trail(56) hs_prepare(36) hs_zero(5) hs_trail(50)
+[0:       1.762] DSIM:INFO:dsim_get_dphy_timing:lpx(26) hs_exit(5)
+[0:       1.762] DSIM:INFO:dsim_get_dphy_timing:b_dphyctl(450)
+[0:       1.762] DISP:INFO:dsim_set_pll_freq: p : 2, m : 138, s : 2, k : 0
+[0:       1.762] DSIM:INFO:dsim_is_pll_stable:EVT1
+[0:       1.762] DSIM:INFO:dsim_is_pll_stable:EVT1
+[0:       1.762] DSIM:INFO:dsim_is_pll_stable:EVT1
+[0:       1.762] DISP:INFO:dsim_enable_pll:dsim pll is stable
+[0:       1.762] DSIM:INFO:dsim_enable_phy_lane : PHY ready done
+[0:       1.762] PANEL:INFO:dsim_set_cm_underrun_lp_ref:lp_ref : 2877
+[0:       1.762] DISP:INFO:dsim_set_config: dsc configuration is set
+[0:       1.762] DISP:INFO:dsim_set_config:dsim0: number of DSC slice(2)
+[0:       1.762] DISP:INFO:dsim_print_size_of_slice:dsim0: slice0 w(720), slice1 w(720), slice2 w(720), slice3(720)
+[0:       1.762] DISP:INFO:reset_panel:system rev : 26
+[0:       1.791] DISP:INFO:s6e3ha9_panel_read_id READ ID : A1 00 13
+[0:       1.792] s6e3ha9_probe s6e3ha9 panel
+[0:       1.792] s6e3ha9_enable_self_mask B1/2 (panel_rev:2, window_color:1)
+[0:       1.792] dsim_write_img_sd tx_size 496 len 496, remained 3584
+[0:       1.792] dsim_write_img_sd tx_size 496 len 992, remained 3088
+[0:       1.792] dsim_write_img_sd tx_size 496 len 1488, remained 2592
+[0:       1.792] dsim_write_img_sd tx_size 496 len 1984, remained 2096
+[0:       1.792] dsim_write_img_sd tx_size 496 len 2480, remained 1600
+[0:       1.792] dsim_write_img_sd tx_size 496 len 2976, remained 1104
+[0:       1.792] dsim_write_img_sd tx_size 496 len 3472, remained 608
+[0:       1.792] dsim_write_img_sd tx_size 496 len 3968, remained 112
+[0:       1.792] dsim_write_img_sd tx_size 112 len 4080, remained 0
+[0:       1.792] DISP:INFO:init_dpp:dpp-id:0
+[0:       1.792] DSIP:INFO:init_dpp:DPU DMA VER : 4000001
+[0:       1.792] DISP:INFO:init_decon:registered panel : s6e3ha9
+[0:       1.792] DISP:INFO:init_decon:xres 1440 yres 3040 win_start_pos 0 win_end_pos bdf059f
+[0:       1.792] DISP:WARN:decon_reg_set_win_bnd_function:1633 undefined blending mode
+[0:       1.865] UFS Provision Pass & DESC_LOCKED
+[0:       1.865] user_dram_test_flag : 0.
+[0:       1.865] f_load_hypervisor: loading uH image from 173056..
+[0:       1.865] [uH] uh page size = 0x43000
+[0:       1.865] [uH] uh total load size = 0x43698
+[0:       1.867] Verify_Signature_Ecdsa 0x86fff000 276120, 0x87042488 512
+[0:       1.874] pit_check_signature (UH) valid.
+[0:       1.874] [uH] load hypervisor
+[0:       1.903] load cp header successful
+[0:       1.907] load_kernel: loading boot image from 218112..
+[0:       1.908] kernel size = 0x334e800, ramdisk size = 0xa9800
+[0:       1.908] RPMB : LOCK state (0)
+[0:       1.908] patch_month_year : 8.25 , os_version : 16.0.0
+[0:       1.908] [CM] set os_version & patch_month_year: start
+[0:       1.908] [CM] set os_version & patch_month_year: success
+[0:       1.908] device_locked : 0
+[0:       1.908] [CM] set device_state: start
+[0:       1.908] [CM] set device_state: success
+[0:       1.908] verified_boot_state : 2
+[0:       1.908] [CM] set boot_state: start
+[0:       1.908] [CM] set boot_state: success
+[0:       1.908] [Fchandler]Jenkins build #106
+[0:       1.908] avbops functions are set successfully
+[0:       1.908] RPMB : LOCK state (0)
+[0:       1.908] avb_slot_verify.c:966: DEBUG: Loading vbmeta struct from partition 'vbmeta'.
+avb_vbmeta_image.c:212: ERROR: Hash does not match!
+avb_slot_verify.c:1027: ERROR: vbmeta: Error verifying vbmeta image: HASH_MISMATCH
+avb_slot_verify.c:1192: DEBUG: vbmeta: VERIFICATION_DISABLED bit is set.
+avb_slot_verify.c:788: DEBUG: bootloader: Loading entire partition.
+blk_bread_bootsector: LUN 1, from 0x0, size 0x2000, buffer 0xb0000000
+[0:       1.932] RPMB : LOCK state (0)
+[0:       1.932] avb_slot_verify.c:788: DEBUG: cm: Loading entire partition.
+RPMB : LOCK state (0)
+[0:       1.957] avb_slot_verify.c:788: DEBUG: dtb: Loading entire partition.
+RPMB : LOCK state (0)
+[0:       1.974] avb_slot_verify.c:788: DEBUG: dtbo: Loading entire partition.
+RPMB : LOCK state (0)
+[0:       1.988] avb_slot_verify.c:788: DEBUG: boot: Loading entire partition.
+RPMB : LOCK state (0)
+[0:       2. 86] avb_slot_verify.c:788: DEBUG: keystorage: Loading entire partition.
+RPMB : LOCK state (0)
+[0:       2. 88] avb_main : Check Samsung Secure Info
+[0:       2. 88] GetSignerVer : SignerVer03
+[0:       2. 88] Verify_Signature_Ecdsa 0xb0000000 9552, 0xb0002340 512
+[0:       2. 95] Verify_Signature_Ecdsa: failed.(FDAA3611)
+[0:       2. 95] pit_check_signature (VBMETA) invalid.
+[0:       2. 95] set_ddi_kernel_type : VBMETA, 0x200
+[0:       2. 95]  No need to update kernel type.
+[0:       2. 95] make_security_decisions : (VBMETA)
+[0:       2. 95] [SW] get random number: start
+[0:       2. 95] [SW] get random number: success
+[0:       2. 95] [CM] RPMB: hmac calculation was finished successfully
+[0:       2. 95] [RLC] hash is not matched
+[0:       2. 95] [SW] get random number: start
+[0:       2. 95] [SW] get random number: success
+[0:       2. 96] [CM] RPMB: hmac calculation was finished successfully
+[0:       2. 96] [RLC] hash is not matched(backup)
+[0:       2. 96] RPMB : LOCK state (0)
+[0:       2. 96] save_wb_snapshot: already saved
+[0:       2. 96] [EFUSE] warranty bit is already set.
+[0:       2. 97] Verify_Signature_Ecdsa 0xb0000000 240528, 0xb003a980 512
+[0:       2.104] Verify_Signature_Ecdsa: failed.(FDAA3611)
+[0:       2.104] pit_check_signature (DTB) invalid.
+[0:       2.104] update_image_status_auth: Status for DTB image is already custom
+[0:       2.104] set_ddi_kernel_type : DTB, 0x80
+[0:       2.104]  No need to update kernel type.
+[0:       2.104] make_security_decisions : (DTB)
+[0:       2.104] [SW] get random number: start
+[0:       2.104] [SW] get random number: success
+[0:       2.105] [CM] RPMB: hmac calculation was finished successfully
+[0:       2.105] [RLC] hash is not matched
+[0:       2.105] [SW] get random number: start
+[0:       2.105] [SW] get random number: success
+[0:       2.105] [CM] RPMB: hmac calculation was finished successfully
+[0:       2.105] [RLC] hash is not matched(backup)
+[0:       2.105] RPMB : LOCK state (0)
+[0:       2.105] save_wb_snapshot: already saved
+[0:       2.105] [EFUSE] warranty bit is already set.
+[0:       2.109] Verify_Signature_Ecdsa 0xb0000000 1621560, 0xb018bc28 512
+[0:       2.112] Verify_Signature_Ecdsa: failed.(FDAA0001)
+[0:       2.112] pit_check_signature (DTBO) invalid.
+[0:       2.112] update_image_status_auth: Status for DTBO image is already custom
+[0:       2.112] set_ddi_kernel_type : DTBO, 0x20
+[0:       2.112]  No need to update kernel type.
+[0:       2.112] make_security_decisions : (DTBO)
+[0:       2.112] [SW] get random number: start
+[0:       2.112] [SW] get random number: success
+[0:       2.112] [CM] RPMB: hmac calculation was finished successfully
+[0:       2.112] [RLC] hash is not matched
+[0:       2.112] [SW] get random number: start
+[0:       2.112] [SW] get random number: success
+[0:       2.113] [CM] RPMB: hmac calculation was finished successfully
+[0:       2.113] [RLC] hash is not matched(backup)
+[0:       2.113] RPMB : LOCK state (0)
+[0:       2.113] save_wb_snapshot: already saved
+[0:       2.113] [EFUSE] warranty bit is already set.
+[0:       2.184] Verify_Signature_Ecdsa 0xb0000000 45053968, 0xb2af7600 512
+[0:       2.273] Verify_Signature_Ecdsa: failed.(FDAA0001)
+[0:       2.273] pit_check_signature (BOOT) invalid.
+[0:       2.273] update_image_status_auth: Status for BOOT image is already custom
+[0:       2.273] set_ddi_kernel_type : BOOT, 0x2
+[0:       2.273]  No need to update kernel type.
+[0:       2.273] make_security_decisions : (BOOT)
+[0:       2.273] [SW] get random number: start
+[0:       2.273] [SW] get random number: success
+[0:       2.273] [CM] RPMB: hmac calculation was finished successfully
+[0:       2.273] [RLC] hash is not matched
+[0:       2.273] [SW] get random number: start
+[0:       2.273] [SW] get random number: success
+[0:       2.274] [CM] RPMB: hmac calculation was finished successfully
+[0:       2.274] [RLC] hash is not matched(backup)
+[0:       2.274] RPMB : LOCK state (0)
+[0:       2.274] save_wb_snapshot: already saved
+[0:       2.274] [EFUSE] warranty bit is already set.
+[0:       2.274] avb_main : vbmeta type : 3
+[0:       2.274] get_sign_info: (VBMETA)
+[0:       2.274] GetSignerVer : SignerVer03
+[0:       2.274] [AVB 2.0 ERR] authentication fail [ret: 0x3] (orange)
+[0:       2.274] drawimg: type: 13
+[0:       2.278] find_param_file: find fail!(svb_orange.jpg)
+[0:       2.278] UP_PARAM partition is empty!!
+[0:       2.278] Need to download the BL binary not HOME_BL!!
+[0:       2.281] find_param_file: find fail!(svb_orange.jpg)
+[0:       2.281] drawimg: read svb_orange.jpg from up_param as 0 size
+avb_cmdline : root=PARTUUID=52444E41-494F-2044-7379-7374656D0000 androidboot.verifiedbootstate=orange
+[0:      12.383] [TIMA trusted boot]: SEAndroid MAGIC failure (boot.img)
+[0:      12.383] [CM] erase public_key: start
+[0:      12.383] [CM] erase public_key: success
+[0:      12.383] [UFDT] BOOT IMG HDR V1.. FINDING DTB ENTRY
+[0:      12.384] [UFDT] Big Find DTB Entry[0]: Rev:(S:0, E:255, X:0, D:26)
+[0:      12.385] [UFDT] FINDING DTBO ENTRY
+[0:      12.389] [UFDT] Big Find DTBO Entry[8]: Rev:(S:26, E:255, X:0, D:26)
+[0:      12.432] [UFDT] DT Overlay Complete!
+[0:      12.432] RPMB: successfully set provision state(1)
+[0:      12.432] Do SMC to set data for TIMA (0xc9b7a910)
+[0:      12.432] ##memory_dump##
+[0:      12.432] 
+[0:      12.432]  c9b7a950h:  00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+[0:      12.432]  c9b7a960h:  00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+[0:      12.432] secure smc success!!!
+[0:      12.432] print_wb_snapshot
+[0:      12.432] 000000 : 53 69 67 6E 65 72 56 65 72 30 33 00 00 00 00 00 |SignerVer03.....|
+[0:      12.432] 000010 : 36 32 38 32 32 34 30 38 52 00 00 00 00 00 00 00 |62822408R.......|
+[0:      12.432] 000020 : 47 39 37 33 46 58 58 53 47 48 57 43 32 00 00 00 |G973FXXSGHWC2...|
+[0:      12.432] 000030 : 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 |................|
+[0:      12.432] 000040 : 32 30 32 33 30 33 30 33 31 37 31 33 34 31 00 00 |20230303171341..|
+[0:      12.432] 000050 : 53 4D 2D 47 39 37 33 46 5F 45 55 52 5F 58 58 5F |SM-G973F_EUR_XX_|
+[0:      12.432] 000060 : 45 55 52 30 00 00 00 00 00 00 00 00 00 00 00 00 |EUR0............|
+[0:      12.432] 000070 : 53 52 50 52 49 32 38 42 30 31 36 00 00 00 00 00 |SRPRI28B016.....|
+[0:      12.433] 000080 : 53 52 50 52 49 32 38 42 30 31 36 00 00 00 00 00 |SRPRI28B016.....|
+[0:      12.433] 000090 : 75 73 72 00 66 72 70 00 6D 72 6B 00 76 62 6D 65 |usr.frp.mrk.vbme|
+[0:      12.433] 0000A0 : 74 61 2E 69 6D 67 00 00 00 00 00 00 36 32 38 32 |ta.img......6282|
+[0:      12.433] 0000B0 : 32 34 30 38 52 00 00 00 00 00 00 00 36 32 38 32 |2408R.......6282|
+[0:      12.433] 0000C0 : 32 34 30 38 52 00 00 00 00 00 00 00 00 00 00 00 |2408R...........|
+[0:      12.433] 0000D0 : 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 |................|
+[0:      12.433] 0000E0 : 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 |................|
+[0:      12.433] 0000F0 : 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 |................|
+[0:      12.433] 
+[0:      12.433] Send info to CP secure table 21
+[0:      12.433] [OTP] JTAG_SW_LOCK read start
+[0:      12.433] [OTP] JTAG_SW_LOCK read value: 0x1
+[0:      12.433] DDI value :0x000003ae
+[0:      12.436] UFS SW lock success
+[0:      12.437] UFS SW lock success
+[0:      12.437] UFS SW lock success
+[0:      12.440] UFS SW lock success
+[0:      12.440] set_minform_magic: before: 4e4e0000 (type: 4, magic: 0)
+[0:      12.440] set_minform_magic: after: 4e4e0000
+[0:      12.440] set_minform_magic: before: 4e4e0000 (type: 2, magic: 0)
+[0:      12.440] set_minform_magic: after: 4e4e0000
+[0:      12.440] set_minform_magic: before: 4e4e0000 (type: 3, magic: 0)
+[0:      12.440] set_minform_magic: after: 4e4e0000
+[0:      12.440] set_minform_magic: before: 4e4e0000 (type: 0, magic: 4e)
+[0:      12.440] set_minform_magic: after: 4e4e0000
+[0:      12.441] check_rustproof [1,0] Off
+[0:      12.441] check_ccic_info: [1] CCIC
+[0:      12.441] ucs flag is Unknown
+[0:      12.441] ucs flag : 00 00 00 00
+[0:      12.441] [DCOM] sec_debug_rooting_info: ddi set and warranty set
+[0:      12.441] [CM] get random number: start
+[0:      12.441] [CM] get random number: success
+param logs: (2026-11-09-21-54)N(2026-11-09-22-12)N(2026-11-09-22-13)N(2026-11-09-22-13)R(2026-11-09-22-14)R(2026-11-09-22-37)R(2026-11-09-22-43)N(2026-11-09-22-43)N(2026-11-09-22-44)N(2026-11-09-22-44)R(2026-11-09-22-45)R(2026-11-09-22-55)R(2026-11-09-23-04)N(2026-11-09-23-05)N(2026-11-09-23-06)R(2026-11-09-23-06)R(2026-11-09-23-19)R(2026-11-09-23-21)N(2026-11-09-23-31)R(2026-11-10-07-57)R(2026-11-10-07-58)R(2026-11-10-08-00)R(2026-11-10-08-02)N(2026-11-10-08-14)N(2026-11-10-08-14)R(2026-11-10-08-15)N(2026-11-10-14-42)N(2026-11-10-14-43)R(2026-11-10-14-43)N(2026-11-10-14-56)N(2026-11-10-14-56)N(2026-11-10-14-57)R(2026-11-10-14-57)N(2026-11-10-22-11)N(2026-11-10-22-11)R(2026-11-10-22-11)N(2026-11-10-22-15)R(2026-11-10-22-15)N(2026-11-10-22-18)R(2026-11-10-22-18)N(2026-11-10-22-37)R(2026-11-10-22-55)N(2026-11-10-23-25)R(2026-11-10-23-25)R(2026-11-11-00-01)N(2026-11-11-00-08)
+[0:      12.441] [DPRM] prepare_for_booting: initialize debug param elements
+[0:      12.441] [DPRM] prepare_for_booting: reset reason(0), debug flag(1), final kmsg(0x55), dprm once(NULL)
+[0:      12.444] [DPRM] erase_debug_param: TYPE: 1 / BLKLEN: 800
+[0:      12.444] [DPRM] dprm_erase: base: 12800 len: 800
+[0:      12.447] UPLOAD_MODE 0, Set S2D LOW, DUMP_DIS
+[0:      12.447] [COMM] retouch_auto_comment: START @91592d00
+[0:      12.447] [COMM] retouch_auto_comment: invalid comment, re-touch failed
+[0:      12.447] [SECD] remove_sec_debug_magic: remove some magics
+[0:      12.447] [SECD] set_dinf_magic: write dinf : 25b7ce71
+[0:      12.448] challenge_size is 111 273
+[0:      12.449] convert_WB_reason_to_char : 0xe03 -> 'F'
+[0:      12.449] secure info base: 0xc9b88000 and SMC Num = 0xb2000202
+
+[0:      12.449] secure smc success!!!
+[0:      12.449] svb_result: 1 and SMC Num = 0xb2000202
+[0:      12.449] secure smc success!!!
+[0:      12.449] iccc_data_lock : SMC Num = 0xb2000202
+[0:      12.449] secure smc success!!!
+[0:      12.449] [TEEGRIS] disable handler execution, ret = 0x0
+[0:      12.449] dtb_update: start
+[0:      12.507] dtb_merge_bootargs: bootargs_ext not found
+[0:      12.507] get_cmdline_buffer: last Index: 872|1000
+[0:      13.755] max77705_adc_read_temp temp = 36, temp_adc = 1560
+[0:      13.755] dtb_update: packing
+[0:      13.792] Updating device tree @0x8a000000: done
+[0:      13.792] Skip Mixture-check
+[0:      13.792] [CM] RPMB: hmac was blocked successfully
+[0:      13.792] [CM] RPMB: key was blocked successfully
+[0:      13.792] [CM] block verified boot commands: start
+[0:      13.792] [CM] block verified boot commands: success
+[0:      13.792] [OTP] OTP_SW_BLOCK enable start
+[0:      13.792] [OTP] OTP_SW_BLOCK enable success
+[0:      13.792] cal_hash_lock: cal_hash locked
+[0:      13.801] max77705_fuel_gauge_read_vcell: VCELL(4286), data(0xd658)
+[0:      13.803] max77705_fuel_gauge_read_soc: SOC(98), data(0x62a2)
+[0:      13.811] [BORE] init_boot_reset_buffer: start: 91a28100, size: 9c600
+[0:      13.848] [BORE] make_boot_reset_dump: 91a28100 ++ 28a11
+[0:      13.848] RPMB : LOCK state (0)
+[0:      13.848] drawimg: type: 0
+[0:      13.853] read 'logo.jpg'(192523) completed.
+[0:      14. 12] LoadJPEG took 156 msec
+[0:      14. 12] [WARN] GdDecodeImage: JPEG image is bigger than LCD
+[0:      14.211] drawimg: cropped image!
+[0:      14.211] drawimg: type: 14
+[0:      14.215] find_param_file: find fail!(booting_warning.jpg)
+[0:      14.215] UP_PARAM partition is empty!!
+[0:      14.215] Need to download the BL binary not HOME_BL!!
+[0:      14.218] find_param_file: find fail!(booting_warning.jpg)
+[0:      14.218] drawimg: read booting_warning.jpg from up_param as 0 size
+[0:      14.233] 
+[0:      14.233] Starting kernel...
+
+[0:      14.233] ifconn_show_switch_sel:
+[0:      14.233] SWITCH_SEL(3)
+[0:      14.233] BOOTING TIME : 14233
+
+Boot info:
+Last boot reason: reboot,factory_reset
