@@ -130,7 +130,7 @@ This project is licensed under the terms of the [GNU General Public License v3.0
 
 # Credits:
 * **[JetomoJetick](https://github.com/JetomoJetick)** for maintaining JetROM, porting Exynos 9820 `target`/`platform` configs, and redesigning the banner.
-* **[ArtisanROM](https://github.com/ArtisanROM-archive)** for the base Exynos 9820 device/platform work and patches.
+* **[ArtisanROM](https://github.com/ArtisanROM)** for the base Exynos 9820 device/platform work and patches.
 - **[salvogiangri](https://github.com/salvogiangri)** for the UN1CA build system, OneUI patches, and general help and support while developing.
 - **[ExtremeXT](https://github.com/ExtremeXT)** for helping me fix bugs and giving me support.
 - **[GhasemzadehFard-Dev](https://github.com/GhasemzadehFard-Dev)** for helping fix many bugs I was not able to fix.
