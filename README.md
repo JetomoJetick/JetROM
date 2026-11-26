@@ -11,7 +11,7 @@
 <p align="center">
   <a href="https://github.com/ArtisanROM/ArtisanROM/issues">🚀 issues</a>
   •
-  <a href="https://discord.gg/TxYWApVRaE">💬 Discord</a>
+  <a href="https://discord.gg/gh3tZus7WQ">💬 Discord</a>
   •
   <a href="https://github.com/ArtisanROM/ArtisanROM/blob/sixteen-qpr2/CHANGELOG.md">📝 Changelog</a>
   •
