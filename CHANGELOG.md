@@ -3,7 +3,8 @@
 # 4.0.2
 - Added Galaxy S10 (Exynos 9820)
 
-----
+
+---
 
 # ArtisanROM changelog
 
