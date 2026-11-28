@@ -1,6 +1,6 @@
 # [
-EXTREMEKRNL_REPO="https://github.com/Android-Artisan/android_kernel_samsung_exynos9820"
-EXTREMEKRNL_BRANCH="main"
+JETKRNL_REPO="https://github.com/JetomoJetick/JetROM-Kernel-Exynos9820"
+JETKRNL_BRANCH="main"
 
 BUILD_KERNEL()
 {
@@ -53,8 +53,8 @@ REPLACE_KERNEL_BINARIES()
             ABORT "Could not pull latest Kernel changes. If you hold local changes, please rebase to the new base. If not, cleaning the kernel_tmp_dir should suffice."
         fi
     else
-        LOG "- Cloning ExtremeKernel"
-        EVAL "git clone --branch $EXTREMEKRNL_BRANCH --single-branch --recurse-submodules \"$EXTREMEKRNL_REPO\" \"$KERNEL_TMP_DIR\""
+        LOG "- Cloning JetKernel"
+        EVAL "git clone --branch $JETKRNL_BRANCH --single-branch --recurse-submodules \"$JETKRNL_REPO\" \"$KERNEL_TMP_DIR\""
     fi
 
     LOG "- Running the kernel build script."
